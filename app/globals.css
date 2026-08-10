@@ -1,0 +1,280 @@
+@import "tailwindcss";
+
+@theme {
+  /* ─── EazySIP 2026 Brand Palette ─── */
+  /* Primary */
+  --color-teal: #004242;          /* Deep Teal */
+  --color-teal-dark: #002e2e;     /* Deeper Teal */
+  --color-teal-light: #006a5f;    /* Lighter Teal */
+  --color-lime: #d0fb11;          /* Electric Lime (brand-exact) */
+  --color-lime-dark: #b8de00;
+
+  /* Secondary */
+  --color-stone: #fffeee;         /* Soft Stone */
+  --color-emerald: #00804d;       /* Emerald Green */
+  --color-royal: #1e4890;         /* Royal Blue */
+
+  /* Tertiary */
+  --color-navy: #001f3e;          /* Midnight Navy */
+  --color-navy-deep: #00133e;
+
+  /* Aliases for semantic use */
+  --color-primary: #004242;
+  --color-primary-dark: #002e2e;
+  --color-primary-light: #006a5f;
+  --color-accent: #d0fb11;
+  --color-accent-dark: #b8de00;
+  --color-dark: #001f3e;
+  --color-dark-section: #002e2e;
+  --color-dark-ribbon: #001530;
+  --color-light-bg: #fffeee;
+  --color-light-green: #e8f9e0;
+  --color-error: #E53935;
+  --color-text-muted: #4a6060;
+  --color-text-gray: #4a5568;
+  --color-calc-dark: #001f3e;
+
+  /* Brand gradient: Deep Teal → Emerald Green (per guidelines) */
+  --gradient-brand: linear-gradient(135deg, #004242 0%, #00804d 100%);
+  --gradient-brand-deep: linear-gradient(135deg, #00133e 0%, #004242 55%, #00804d 100%);
+
+  /* ─── Typography: Poppins (headline + body per brand) ─── */
+  --font-poppins: var(--font-poppins), "Poppins", "Poppins Fallback", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-noto: var(--font-noto), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-poppins), "Poppins", "Poppins Fallback", var(--font-noto), ui-sans-serif, system-ui,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --font-display: var(--font-poppins), "Poppins", "Poppins Fallback", ui-sans-serif, sans-serif;
+  --font-serif: var(--font-poppins), "Poppins", "Poppins Fallback", ui-sans-serif, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-poppins), "Poppins", "Poppins Fallback", ui-sans-serif, system-ui, sans-serif;
+    color: var(--color-navy);
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-poppins), "Poppins", "Poppins Fallback", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--color-navy);
+  }
+
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  ::selection {
+    background-color: #d0fb11;
+    color: #004242;
+  }
+}
+
+@layer utilities {
+  /* ── Brand surface utilities ── */
+  .bg-brand-gradient {
+    background: linear-gradient(135deg, #004242 0%, #00804d 100%);
+  }
+
+  .bg-brand-gradient-deep {
+    background: linear-gradient(135deg, #00133e 0%, #004242 55%, #00804d 100%);
+  }
+
+  .bg-teal        { background-color: #004242; }
+  .bg-teal-dark   { background-color: #002e2e; }
+  .bg-lime        { background-color: #d0fb11; }
+  .bg-stone       { background-color: #fffeee; }
+  .bg-emerald-brand { background-color: #00804d; }
+  .bg-navy        { background-color: #001f3e; }
+
+  .text-teal      { color: #004242; }
+  .text-lime      { color: #d0fb11; }
+  .text-stone     { color: #fffeee; }
+  .text-navy      { color: #001f3e; }
+  .text-muted     { color: #4a6060; }
+
+  .border-teal    { border-color: #004242; }
+  .border-lime    { border-color: #d0fb11; }
+
+  .ring-lime      { --tw-ring-color: #d0fb11; }
+
+  /* ── Swirl radial halo (logo-derived) ── */
+  .bg-swirl-halo {
+    background-image:
+      radial-gradient(ellipse at 85% 15%, rgba(208, 251, 17, 0.08), transparent 45%),
+      radial-gradient(ellipse at 15% 85%, rgba(0, 128, 77, 0.18), transparent 50%);
+  }
+
+  .bg-grain {
+    background-image:
+      radial-gradient(rgba(0, 66, 66, 0.04) 1px, transparent 1px);
+    background-size: 18px 18px;
+  }
+
+  /* ── Marquee ── */
+  .animate-marquee {
+    animation: marquee var(--marquee-duration, 40s) linear infinite;
+  }
+
+  .animate-marquee-reverse {
+    animation: marquee-reverse var(--marquee-duration, 40s) linear infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spin 28s linear infinite;
+  }
+
+  .animate-pulse-ring {
+    animation: pulse-ring 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  /* ── GPU compositing hints for animated elements ── */
+  .animate-float,
+  .animate-spin-slow,
+  .animate-marquee,
+  .animate-marquee-reverse {
+    will-change: transform;
+  }
+
+  /* ── Smooth accordion panel ── */
+  .accordion-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .accordion-body.open {
+    grid-template-rows: 1fr;
+  }
+  .accordion-body > div {
+    overflow: hidden;
+  }
+
+  /* ── Reduce motion on mobile to save paint budget ── */
+  @media (max-width: 640px) {
+    .animate-spin-slow {
+      animation: none;
+      opacity: 0;
+    }
+  }
+
+  /* ── Typography helpers ── */
+  .font-heading,
+  .font-body,
+  .font-display {
+    font-family: var(--font-poppins), "Poppins", "Poppins Fallback", ui-sans-serif, system-ui, sans-serif;
+  }
+
+  .text-balance { text-wrap: balance; }
+  .text-pretty  { text-wrap: pretty; }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* ── Shadows tuned for brand ── */
+  .shadow-lime {
+    box-shadow: 0 18px 40px -12px rgba(208, 251, 17, 0.45);
+  }
+
+  .shadow-teal {
+    box-shadow: 0 18px 40px -12px rgba(0, 66, 66, 0.4);
+  }
+
+  .shadow-card {
+    box-shadow: 0 10px 30px -8px rgba(0, 31, 62, 0.1), 0 4px 12px -4px rgba(0, 31, 62, 0.06);
+  }
+
+  /* ── Decorative dotted divider (lime-tinted) ── */
+  .divider-lime {
+    background-image: radial-gradient(circle, #d0fb11 1.2px, transparent 1.4px);
+    background-size: 14px 2px;
+    background-repeat: repeat-x;
+    background-position: center;
+    height: 2px;
+  }
+}
+
+@keyframes marquee {
+  /* --marquee-offset is set in px by JS (Marquee.tsx) so Safari/iOS   */
+  /* doesn't misresolve -100% on intrinsically-sized flex children.     */
+  /* translateZ(0) forces a stable GPU compositing layer on iOS.        */
+  0%   { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(var(--marquee-offset, -50%), 0, 0); }
+}
+
+@keyframes marquee-reverse {
+  0%   { transform: translate3d(var(--marquee-offset, -50%), 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%      { transform: translateY(-12px); }
+}
+
+@keyframes pulse-ring {
+  0%   { transform: scale(1);   opacity: 0.6; }
+  80%, 100% { transform: scale(1.6); opacity: 0; }
+}
+
+@keyframes ezFadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ezSlideUp {
+  from { opacity: 0; transform: translateY(48px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom range slider styling for calculator */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 9999px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #d0fb11;
+  cursor: pointer;
+  border: 3px solid #004242;
+  box-shadow: 0 2px 8px rgba(0, 66, 66, 0.35);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #d0fb11;
+  cursor: pointer;
+  border: 3px solid #004242;
+  box-shadow: 0 2px 8px rgba(0, 66, 66, 0.35);
+}
+
+/* Removed aggressive prefers-reduced-motion to allow marquees to scroll smoothly for all users */

@@ -1,0 +1,1137 @@
+{
+  "common": {
+    "downloadApp": "एप डाउनलोड गर्नुहोस्",
+    "downloadEazySip": "eazySIP डाउनलोड गर्नुहोस्",
+    "getStartedNow": "अहिले सुरु गर्नुहोस्",
+    "watchHowItWorks": "कसरी काम गर्छ हेर्नुहोस्",
+    "home": "गृहपृष्ठ",
+    "features": "विशेषताहरू",
+    "howItWorks": "कसरी काम गर्छ",
+    "calculator": "क्याल्कुलेटर",
+    "about": "हाम्रो बारेमा",
+    "blog": "ब्लग",
+    "contact": "सम्पर्क",
+    "english": "English",
+    "nepali": "नेपाली",
+    "amfiRegistered": "AMFI दर्ता वितरक",
+    "bseStarMf": "BSE StAR MF साझेदार",
+    "encrypted": "२५६-बिट इन्क्रिप्टेड",
+    "sipsRunning": "५००+ SIP चलिरहेका छन्",
+    "readMore": "थप पढ्नुहोस्",
+    "viewAllArticles": "सबै लेखहरू हेर्नुहोस् →",
+    "chatOnWhatsapp": "हामीसँग WhatsApp मा कुरा गर्नुहोस्",
+    "orScanQr": "वा QR कोड स्क्यान गर्नुहोस्",
+    "company": "कम्पनी",
+    "product": "उत्पादन",
+    "resources": "स्रोतहरू",
+    "legal": "कानूनी",
+    "aboutUs": "हाम्रो बारेमा",
+    "ourTeam": "हाम्रो टोली",
+    "careers": "करियर",
+    "contactUs": "सम्पर्क गर्नुहोस्",
+    "eazySipApp": "eazySIP एप",
+    "mutualFunds": "म्युचुअल फन्ड",
+    "startSip": "SIP सुरु गर्नुहोस्",
+    "sipCalculator": "SIP क्याल्कुलेटर",
+    "faq": "प्रायः सोधिने प्रश्नहरू",
+    "termsAndConditions": "नियम तथा सर्तहरू",
+    "privacyPolicy": "गोपनीयता नीति",
+    "riskDisclosure": "जोखिम प्रकटीकरण",
+    "investorCharter": "लगानीकर्ता बडापत्र",
+    "grievanceRedressal": "गुनासो निवारण",
+    "commissionDisclosure": "कमिशन प्रकटीकरण",
+    "amfiTagline": "AMFI-दर्ता म्युचुअल फन्ड वितरक | ARN-313834",
+    "mandatoryDisclaimer": "म्युचुअल फन्ड लगानी बजार जोखिमको अधीनमा छ, सबै योजना सम्बन्धित कागजातहरू ध्यानपूर्वक पढ्नुहोस्।",
+    "copyright": "© २०२४-२०२६ Dzambala Financial Services LLP. सर्वाधिकार सुरक्षित।",
+    "regularPlanNotice": "eazySIP मार्फत गरिने लगानीहरू म्युचुअल फन्ड योजनाहरूको नियमित योजनाहरू (Regular Plans) मा हुन्छन्, जसमा वितरकलाई कमिशन भुक्तानी समावेश हुन्छ।"
+  },
+  "home": {
+    "heroHeadline": "तपाईंको भाषामा SIP सुरु गर्नुहोस्",
+    "heroSubheadline": "भारतको पहिलो नेपाली भाषाको म्युचुअल फन्ड एप। मात्र ₹५००/महिनाबाट लगानी सुरु गर्नुहोस्।",
+    "appPreview": "एप पूर्वावलोकन",
+    "whyChoose": "eazySIP किन रोज्ने?",
+    "why1Title": "नेपाली भाषा समर्थन",
+    "why1Desc": "भ्वाइस-असिस्टेड नेभिगेसनको साथ तपाईंको मातृभाषामा पूर्ण एप अनुभव",
+    "why2Title": "३-क्लिक SIP सेटअप",
+    "why2Desc": "आफ्नो लक्ष्य छान्नुहोस्, फन्ड छान्नुहोस्, लगानी सुरु गर्नुहोस्। कुनै जटिल फारमहरू छैनन्।",
+    "why3Title": "UPI अटोपे",
+    "why3Desc": "UPI मार्फत स्वचालित मासिक SIP डेबिट। शून्य कागजी काम।",
+    "why4Title": "WhatsApp अपडेटहरू",
+    "why4Desc": "WhatsApp मा SIP पुष्टिकरण, NAV अपडेटहरू, र पोर्टफोलियो सारांशहरू प्राप्त गर्नुहोस्।",
+    "stepsTitle": "३ सजिलो चरणमा लगानी सुरु गर्नुहोस्",
+    "step1Title": "eazySIP डाउनलोड गर्नुहोस्",
+    "step1Desc": "Google Play वा App Store बाट एप प्राप्त गर्नुहोस्",
+    "step2Title": "eKYC पूरा गर्नुहोस्",
+    "step2Desc": "नेपालीमा द्रुत भिडियो KYC। १० मिनेट भन्दा कममा।",
+    "step3Title": "तपाईंको SIP सुरु गर्नुहोस्",
+    "step3Desc": "लक्ष्य छान्नुहोस्, फन्ड छान्नुहोस्, तपाईंको मासिक रकम सेट गर्नुहोस्। सकियो।",
+    "calcTitle": "SIP क्याल्कुलेटर",
+    "calcMonthly": "मासिक लगानी",
+    "calcPeriod": "समय अवधि (वर्ष)",
+    "calcRate": "अपेक्षित प्रतिफल दर (%)",
+    "calcTotalInvested": "कुल लगानी",
+    "calcEstReturns": "अनुमानित प्रतिफल",
+    "calcTotalValue": "कुल मूल्य",
+    "calcCta": "eazySIP एपमा यो SIP सुरु गर्नुहोस्",
+    "calcDisclaimer": "* देखाइएको प्रतिफल उदाहरणात्मक हो र ग्यारेन्टी छैन। म्युचुअल फन्ड लगानी बजार जोखिमको अधीनमा छ।",
+    "testimonialsTitle": "हाम्रा लगानीकर्ताहरूले के भन्छन्",
+    "test1Quote": "eazySIP ले लगानी गर्न धेरै सजिलो बनायो। मैले कहिल्यै सोचेको थिइनँ कि म नेपालीमा म्युचुअल फन्ड SIP सुरु गर्न सक्छु!",
+    "test1Name": "Rajan T.",
+    "test1Loc": "Gangtok",
+    "test2Quote": "म पहिलो पटक लगानी गर्दैछु र eazySIP ले सबै कुरा सजिलो बनायो।",
+    "test2Name": "Sunita K.",
+    "test2Loc": "Darjeeling",
+    "test3Quote": "सहयोगी समर्थन र WhatsApp अपडेटहरूले मलाई मेरो लगानीमा विश्वास दिन्छ।",
+    "test3Name": "Binod P.",
+    "test3Loc": "Siliguri",
+    "partnersTitle": "भारतको विश्वसनीय वित्तीय पूर्वाधारद्वारा संचालित",
+    "blogTitle": "लगानीको बारेमा सिक्नुहोस्",
+    "finalCtaHeadline": "लगानी यात्रा सुरु गर्न तयार हुनुहुन्छ?",
+    "finalCtaSubtext": "eazySIP डाउनलोड गर्नुहोस् र १० मिनेट भन्दा कममा तपाईंको पहिलो SIP सुरु गर्नुहोस्।"
+  },
+  "features": {
+    "heroTitle": "तपाईंलाई लगानी गर्न आवश्यक सबै कुरा, तपाईंको भाषामा",
+    "f1Title": "नेपाली भाषा UI",
+    "f1Desc": "भ्वाइस-असिस्टेड नेभिगेसन सहित नेपालीमा पूर्ण एप",
+    "f2Title": "लक्ष्य-आधारित लगानी",
+    "f2Desc": "सेवानिवृत्ति, शिक्षा, विवाह, वा अनुकूलन लक्ष्यहरूको लागि लक्ष्यहरू सेट गर्नुहोस्",
+    "f3Title": "नेपालीमा भिडियो KYC",
+    "f3Desc": "नेपाली बोल्ने एजेन्टसँग पहिचान प्रमाणीकरण पूरा गर्नुहोस्",
+    "f4Title": "३ क्लिकमा SIP",
+    "f4Desc": "सरलीकृत फन्ड चयन र लगानी सेटअप",
+    "f5Title": "UPI अटोपे",
+    "f5Desc": "स्वचालित मासिक SIP डेबिट, कुनै NACH कागजी काम छैन",
+    "f6Title": "पोर्टफोलियो ड्यासबोर्ड",
+    "f6Desc": "लगानी, प्रतिफल, र पूँजीगत लाभहरू एकै दृश्यमा ट्र्याक गर्नुहोस्",
+    "f7Title": "WhatsApp एकीकरण",
+    "f7Desc": "WhatsApp मा पुष्टिकरण, रिमाइन्डर, र पोर्टफोलियो अपडेटहरू",
+    "f8Title": "बैंक-ग्रेड सुरक्षा",
+    "f8Desc": "२५६-बिट इन्क्रिप्सन, SEBI अनुरूप, डाटा सुरक्षा"
+  },
+  "howItWorks": {
+    "title": "कसरी काम गर्छ",
+    "step1Title": "eazySIP डाउनलोड गर्नुहोस्",
+    "step1Desc": "Google Play र App Store मा उपलब्ध छ।",
+    "step2Title": "भाषा छान्नुहोस् र भिडियो हेर्नुहोस्",
+    "step2Desc": "नेपालीमा SIP को २-मिनेट भिडियो परिचय।",
+    "step3Title": "eKYC पूरा गर्नुहोस्",
+    "step3Desc": "PAN + नेपालीमा भिडियो KYC।",
+    "step4Title": "तपाईंको SIP सेटअप गर्नुहोस्",
+    "step4Desc": "लक्ष्य → फन्ड → रकम → UPI अटोपे।",
+    "step5Title": "ट्र्याक र वृद्धि गर्नुहोस्",
+    "step5Desc": "ड्यासबोर्ड, WhatsApp अपडेटहरू, कुनै पनि समय परिमार्जन गर्नुहोस्।",
+    "compareTitle": "eazySIP बनाम अन्य एपहरू",
+    "subtitle": "Start your mutual fund investment journey in 5 easy steps using just your mobile phone."
+  },
+  "about": {
+    "title": "हाम्रो बारेमा",
+    "mission": "भारतमा नेपाली बोल्ने समुदायहरूको लागि भाषा अवरोधहरू हटाएर र लगानी यात्रालाई सरल बनाएर म्युचुअल फन्ड लगानीलाई प्रजातान्त्रिक बनाउन।",
+    "teamTitle": "हाम्रो टोली",
+    "credentialsTitle": "नियामक प्रमाणहरू",
+    "locationTitle": "हाम्रो कार्यालय",
+    "timelineTitle": "हाम्रो यात्रा",
+    "amfiCredDesc": "Registered Mutual Fund Distributor (ARN-313834)",
+    "bseCredDesc": "Official exchange partner for secure transaction routing",
+    "sebiCredTitle": "SEBI Compliant",
+    "sebiCredDesc": "Operating under strict guidelines for investor protection",
+    "teamMemberTitle": "Founding Member",
+    "teamMemberRole": "Leadership Team",
+    "brandName": "Dzambala Financial Services LLP",
+    "locationBody": "Registered head office located in India. We operate digitally to serve the broader Nepali-speaking diaspora securely and efficiently across the country."
+  },
+  "contact": {
+    "title": "सम्पर्क गर्नुहोस्",
+    "formName": "नाम",
+    "formEmail": "इमेल",
+    "formPhone": "फोन",
+    "formSubject": "विषय",
+    "formMessage": "सन्देश",
+    "formSubmit": "पेश गर्नुहोस्",
+    "infoTitle": "सम्पर्क जानकारी",
+    "subtitle": "Have a question about your SIPs? We are here to help you in your language.",
+    "emailSupportTitle": "Email Support",
+    "emailSupportDesc": "For general inquiries and technical support.",
+    "whatsappSupportTitle": "WhatsApp Support",
+    "whatsappSupportDesc": "Chat directly with a Nepali-speaking advisor.",
+    "officeLocationTitle": "Office Location",
+    "officeAddressLine1": "Dzambala Financial Services LLP",
+    "officeAddressLine2": "141/166, C/o Geeta Chettri, Pandey Colony, Gyalshing Nagar Panchayat",
+    "officeAddressLine3": "Gayzing, West Sikkim, Sikkim - 737111, India",
+    "placeholderName": "John Doe",
+    "placeholderPhone": "+91",
+    "placeholderEmail": "john@example.com",
+    "placeholderSubject": "How can we help?",
+    "placeholderMessage": "Write your message here..."
+  },
+  "blog": {
+    "title": "ब्लग",
+    "readTime": "मिनेट पढाइ"
+  },
+  "trustSection": {
+    "safetyFirst": "सुरक्षा पहिलो",
+    "headline": "तपाईंको पैसा हाम्रोसँग सुरक्षित किन छ",
+    "p1Title": "SEBI दर्ता म्युचुअल फन्ड वितरक",
+    "p1Desc": "हामी भारतको प्रतिभूति नियामकद्वारा नियमित छौं। कुनै बैंक-स्वामित्व म्युचुअल फन्ड प्लेटफर्मजस्तै नियमहरू।",
+    "p2Title": "पैसा कहिल्यै हाम्रोमा रहँदैन",
+    "p2Desc": "पैसा सीधै तपाईंको बैंकबाट AMC मा जान्छ। EazySip ले तपाईंको पैसा कहिल्यै राख्दैन।",
+    "p3Title": "बैंक-ग्रेड एन्क्रिप्सन",
+    "p3Desc": "तपाईंको डेटा एन्ड-टु-एन्ड एन्क्रिप्टेड छ। दुई-कारक लगइन। UPI एपजस्तै सुरक्षा मानक।",
+    "p4Title": "जुनसुकै बेला निकाल्नुहोस्",
+    "p4Desc": "अधिकांश फन्डका लागि कुनै लक-इन छैन। पैसा सामान्यतया १–३ कार्यदिनमा तपाईंको बैंकमा पुग्छ।",
+    "p5Title": "मद्दत गर्न वास्तविक मानिसहरू",
+    "p5Desc": "हरेक कदममा मद्दत गर्न सहायोगीहरू। नेपाली, हिन्दी वा अंग्रेजीमा सन्देश — वास्तविक मानिसले जवाफ दिन्छ।"
+  },
+  "solutionSection": {
+    "solutionLabel": "समाधान",
+    "headline": "EazySip — तपाईंका लागि लगानी सरल बनाइयो",
+    "subHeadline": "अन्य लगानी एपहरूलाई जटिल बनाउने सबै कुरा हामीले हटायौं।",
+    "c1Title": "कुनै अलमल छैन",
+    "c1Desc": "हामी तपाईंलाई १०० विकल्प देखाउँदैनौं। तपाईंको लक्ष्यको आधारमा मार्गदर्शन गर्छौं।",
+    "c2Title": "विशेषज्ञता चाहिँदैन",
+    "c2Desc": "ट्रेड गर्न वा वित्तीय ज्ञान हुन जरुरी छैन। तपाईंको पैसा सुरक्षित रूपमा बढाउने सरल तरिका मात्र।",
+    "c3Title": "बढी सोच्नु छैन",
+    "c3Desc": "शून्यबाट सुरु गर्नेहरूका लागि बनाइएको। सुरक्षित, सरल, चरणबद्ध। कुनै दबाब छैन।",
+    "pillText": "EazySip शून्यबाट सुरु गर्नेहरूका लागि बनाइएको छ"
+  },
+  "problemSection": {
+    "honestTruth": "साँचो कुरा",
+    "headline": "बैंकको पैसाले पुग्छ भन्ने लाग्यो भने, तपाईं यो पढ्नुहुन्न थियो।",
+    "quote": "सबैले लगानी गर्नू भन्छन्… तर कसरी?",
+    "p1": "तर तपाईं पर्खनुहुन्छ। महिनापछि महिना। र बिस्तारै महँगाइले तपाईंको पैसाको मूल्य घटाउँछ।",
+    "p2": "र हरेक आफन्तले भन्छन् \"यार, म्युचुअल फन्डमा पैसा हाल\" — तर जब त्यो एप खोल्नुहुन्छ, \"रिस्क प्रोफाइल\" र \"एसेट एलोकेसन\" सोध्छ, ३,००० फन्ड देखाउँछ, र तपाईंले एप बन्द गर्नुहुन्छ।",
+    "notProblem": "समस्या तपाईंमा छैन। एपहरूमा छ।",
+    "s1": "३,००० फन्डको आवश्यकता छैन। एउटा राम्रो फन्ड सरलरूपमा सुरु गर्नुहोस्।",
+    "s2": "बजार अनुमान गर्नुपर्दैन। बस लगानीमा टिक्नुहोस्।",
+    "s3": "'फाइनान्स व्यक्ति' हुनुपर्दैन। पहिलो दिन मार्गदर्शन गर्न कोही इमानदार चाहिन्छ।",
+    "whatWeAreHereFor": "त्यही गर्न हामी यहाँ छौं।"
+  },
+  "objectionSection": {
+    "label": "इमानदार जवाफहरू",
+    "headline": "तपाईंको मनमा अहिले के चल्दैछ",
+    "q1": "\"तर बजार जोखिमपूर्ण छ, होइन?\"",
+    "a1": "हो — ६ महिनामा छिटो पैसा बनाउन खोज्नेलाई। होइन — १० वर्षसम्म दिनमा ₹१०० लगानी गर्नेलाई। SIP ले मूल्य घट्दा बढी युनिट किन्छ, बढ्दा कम। उतारचढाव इन्जिन हो, शत्रु होइन। हामी यसलाई स्वचालित बनाउँछौं।",
+    "q2": "\"मलाई वित्तीय शब्दजाल बुझिँदैन\"",
+    "a2": "ठीक छ। अधिकांश मानिसले बुझ्दैनन्। त्यसैले EazySip सरल छ। हामी साथीझैं मार्गदर्शन गर्छौं।",
+    "q3": "\"सुरु गर्न कति पैसा चाहिन्छ?\"",
+    "a3": "₹१००। बस्। कुनै अग्रिम शुल्क छैन। कुनै \"न्यूनतम ब्यालेन्स\" छैन। पछि बढाउन सक्नुहुन्छ।",
+    "q4": "\"पैसा सबै गुमाइयो भने?\"",
+    "a4": "कुनै एक दिन तपाईंको लगानी माथि वा तल हुन सक्छ — यो सामान्य हो। १०+ वर्षमा, भारतमा इक्विटी म्युचुअल फन्डले वार्षिक लगभग १२% औसत दिएको छ। तपाईंको काम बस टिक्नु हो।",
+    "q5": "\"के म जुनसुकै बेला निकाल्न सक्छु?\"",
+    "a5": "हो। जुनसुकै बेला। कुनै सूचना अवधि छैन। निकासी १–३ कार्यदिनमा तपाईंको बैंकमा पुग्छ। यो तपाईंको पैसा हो।",
+    "q6": "\"एपलाई किन विश्वास गर्ने?\"",
+    "a6": "उचित प्रश्न। पैसा हामीले कहिल्यै राख्दैनौं — यो सीधै प्रतिष्ठित म्युचुअल फन्ड कम्पनीहरूमा जान्छ। विश्वास गुमाउनासाथ तपाईं आफ्नो पैसासँग जानुहोस्।"
+  },
+  "howItWorksSection": {
+    "label": "यो कसरी काम गर्छ",
+    "headline": "चार सानो कदम। करिब १० मिनेट।",
+    "cta": "१० मिनेटमा सुरु गर्नुहोस्",
+    "steps": [
+      {
+        "num": "०१",
+        "icon": "💬",
+        "title": "केही सजिला प्रश्न जवाफ गर्नुहोस्",
+        "desc": "प्राविधिक शब्दहरू छैनन्। बस तपाईंको लक्ष्यबारे सामान्य कुराहरू।"
+      },
+      {
+        "num": "०२",
+        "icon": "📋",
+        "title": "सरल योजना पाउनुहोस्",
+        "desc": "हामी तपाईंका लागि उपयुक्त के हो भन्ने सुझाव दिन्छौं — सबै होइन।"
+      },
+      {
+        "num": "०३",
+        "icon": "🚀",
+        "title": "SIP सुरु गर्नुहोस् (₹१०० बाटै)",
+        "desc": "पैसा हरेक महिना स्वचालित रूपमा लगानी हुन्छ। दैनिक जाँच्नु पर्दैन।"
+      },
+      {
+        "num": "०४",
+        "icon": "✅",
+        "title": "बस्, सुरु भयो।",
+        "desc": "तपाईंको पैसाले हरेक महिना पर्दाभित्र काम गर्दैछ।"
+      }
+    ]
+  },
+  "heroSection": {
+    "badge": "पहिलो पटक लगानी गर्नेहरूको एप",
+    "h1_1": "₹१०० बाट सुरु गर्नुहोस्।",
+    "h1_amount": "",
+    "h1_3": "",
+    "subHeadline": "EazySIP ले तपाईंलाई आफ्नो भाषामा, सानो रकमबाट, नियमित रूपमा लगानी गर्न मद्दत गर्छ।",
+    "cta": "पहिलो SIP अहिले नै सुरु गर्नुहोस्",
+    "tag1": "SEBI विनियमित",
+    "tag2": "लक्ष्य-आधारित",
+    "tag3": "जुनसुकै बेला निकाल्नुहोस्"
+  },
+  "heroScrollTransition": {
+    "label": "लक्ष्य-आधारित SIP",
+    "sub": "₹१०० बाट सुरु गर्नुहोस्",
+    "g1": "विवाह",
+    "g2": "शिक्षा",
+    "g3": "घर",
+    "g4": "सेवानिवृत्ति",
+    "g5": "यात्रा",
+    "revealLabel": "भरोसेमन्द र नियमित",
+    "revealHeadline": "तपाईंको पैसा भारतका सबैभन्दा भरोसेमन्द प्लेटफर्महरू मार्फत जान्छ",
+    "trust1Title": "SEBI अनुरूप",
+    "trust1Sub": "पूर्ण रूपमा विनियमित",
+    "trust2Title": "BSE StAR MF",
+    "trust2Sub": "एक्सचेन्ज साझेदार",
+    "trust3Title": "AMFI दर्ता",
+    "trust3Sub": "अधिकृत वितरक",
+    "trust4Title": "२५६-बिट एन्क्रिप्टेड",
+    "trust4Sub": "बैंक-ग्रेड सुरक्षा"
+  },
+  "heroBento": {
+    "badge": "लक्ष्य-आधारित SIP",
+    "estText1": "₹५०० × १० वर्ष",
+    "estReturnLabel": "अनुमानित प्रतिफल ₹१,२३,४५३",
+    "estSub": "१२% वार्षिक प्रतिफलमा अनुमानित",
+    "startFrom": "₹१०० बाट सुरु",
+    "calcBtn": "हिसाब",
+    "g1": "विवाह कोष",
+    "g2": "शिक्षा कोष",
+    "g3": "सपनाको यात्रा",
+    "g4": "आफ्नो घर",
+    "g5": "सेवानिवृत्ति",
+    "trustText": "तपाईंको पैसा पूर्ण सुरक्षित छ",
+    "t1": "SEBI अनुरूप",
+    "t2": "BSE StAR MF",
+    "t3": "AMFI दर्ता",
+    "t4": "एन्क्रिप्टेड"
+  },
+  "finalCta": {
+    "badge": "तपाईंको समय अहिले हो",
+    "headline": "तपाईंको भविष्य पर्खिरहेको छ।",
+    "p1": "यदि अहिले होइन, तब कहिले? प्रतीक्षाको हरेक महिना तपाईंको पैसाको मूल्य घट्दछ।",
+    "p2": "सानो सुरु गर्नुहोस्। नियमित रहनुहोस्। केही वास्तविक बनाउनुहोस्।",
+    "btnText": "पहिलो SIP सुरु गर्नुहोस् — ₹१००",
+    "t1": "१० मिनेट लाग्छ",
+    "t2": "जुनसुकै बेला रद्द गर्नुहोस्",
+    "t3": "कुनै एजेन्ट फोन गर्दैन",
+    "tagline": "धीमो पैसा बढ्छ, छिटो पैसा जान्छ।",
+    "quote": "मलाई लाग्छ म यो गर्न सक्छु। यो सरल र सुरक्षित लाग्छ। एकपटक गरौं।",
+    "portfolioLabel": "Portfolio",
+    "gainLabel": "Gain",
+    "investedLabel": "Invested",
+    "startSipText": "SIP सुरु • ₹१००/महिना"
+  },
+  "faqSection": {
+    "label": "बारम्बार सोधिने प्रश्नहरू",
+    "headline": "पहिलो पटक लगानीकर्ताहरूले वास्तवमा सोध्ने प्रश्नहरू",
+    "q1": "के EazySip सुरक्षित छ?",
+    "a1": "हो। EazySip SEBI दर्ता प्लेटफर्म हो। तपाईंको पैसा कहिल्यै हाम्रोमा रहँदैन — यो सीधै तपाईंको बैंकबाट म्युचुअल फन्ड कम्पनीमा जान्छ।",
+    "q2": "के कुनै लुकेको शुल्क छ?",
+    "a2": "कुनै अग्रिम शुल्क छैन, कुनै \"प्रिमियम खाता\" छैन, कुनै कमिसन छैन। फन्ड हाउसले मानक खर्च अनुपात लिन्छ (सामान्यतः वार्षिक ०.३–०.८%)।",
+    "q3": "SIP बन्द गर्न चाहे के हुन्छ?",
+    "a3": "जुनसुकै बेला निःशुल्क रोक्नुहोस्। कुनै फोन कल छैन, कुनै जरिमाना छैन। तयार हुँदा पुनः सुरु गर्नुहोस्। रोकिँदा पनि लगानी बढ्दै रहन्छ।",
+    "q4": "के मलाई प्रविधिको ज्ञान चाहिन्छ?",
+    "a4": "होइन। WhatsApp चलाउन सक्नुहुन्छ भने EazySip पनि चलाउन सक्नुहुन्छ। पढ्न गाह्रो भए नेपालीमा भ्वाइस नोट र वास्तविक मानिसले मद्दत गर्छ।",
+    "q5": "यो FD भन्दा कसरी फरक छ?",
+    "a5": "FD ले लगभग ६–७% दिन्छ — महँगाइले अधिकांश खान्छ। इक्विटी म्युचुअल फन्डले १०+ वर्षमा लगभग १२% औसत दिएको छ। FD १ वर्षका लागि सुरक्षित, SIP १० वर्षका लागि बुद्धिमानी।",
+    "q6": "आपतकालमा पैसा निकाल्न सक्छु?",
+    "a6": "हो — जुनसुकै बेला। निकासी सामान्यतः १–३ कार्यदिनमा बैंकमा पुग्छ। कुनै एग्जिट शुल्क छैन।",
+    "q7": "EazySip को प्रयोग वास्तवमा कसले गर्छ?",
+    "a7": "मुख्यतः २१–५० वर्षका पहिलो पटक लगानीकर्ताहरू, जसको मासिक आय ₹१५,०००–₹६०,००० बीच छ। ठीक तपाईंजस्तै मानिसहरू।",
+    "stillHaveQuestion": "अझै प्रश्न छ?",
+    "msgUs": "WhatsApp मा नेपाली, हिन्दी वा अंग्रेजीमा सन्देश पठाउनुहोस्। बिहान ८ देखि रात १० सम्म वास्तविक मानिस जवाफ दिन्छ।",
+    "chatBtn": "WhatsApp मा कुराकानी"
+  },
+  "benefitsSection": {
+    "label": "किन EazySip",
+    "headline": "तपाईंले वास्तवमा के पाउनुहुन्छ",
+    "benefits": [
+      {
+        "icon": "🛡️",
+        "title": "मनको शान्ति",
+        "desc": "तपाईंको पैसा सीधै म्युचुअल फन्डमा जान्छ, हाम्रो खातामा होइन। SEBI द्वारा राम्रोसँग नियमित।"
+      },
+      {
+        "icon": "🚀",
+        "title": "साँचो सुरुवात",
+        "desc": "अधिकांशले \"अर्को महिनादेखि\" लगानी गर्ने योजना बनाउँछन्। EazySip प्रयोगकर्ताहरू अहिले नै सुरु गर्छन्।"
+      },
+      {
+        "icon": "📈",
+        "title": "चुपचाप बढ्ने पैसा",
+        "desc": "₹१०० महिनामा, १० वर्षको लागि, लगभग ₹२३,००० हुन सक्छ।"
+      },
+      {
+        "icon": "🤝",
+        "title": "हरेक कदममा मार्गदर्शन",
+        "desc": "तपाईं एक्लो हुनुहुन्न। हाम्रा सहायोगीहरूले हरेक कदममा मार्गदर्शन गर्छन्।"
+      },
+      {
+        "icon": "🔄",
+        "title": "तनाव होइन, बानी बसाउनुहोस्",
+        "desc": "EazySip ले तपाईंलाई बढी नसोची नियमित लगानी गर्न मद्दत गर्छ।"
+      },
+      {
+        "icon": "⏸️",
+        "title": "जीवनसँगै रोकिने SIP",
+        "desc": "चाड? अस्पतालको बिल? जरिमाना बिना SIP रोक्नुहोस्। सक्ने बेलामा पुनः सुरु गर्नुहोस्।"
+      }
+    ]
+  },
+  "sipDataPipeline": {
+    "g1": "विवाह कोष",
+    "g2": "सपनाको कार",
+    "g3": "घरको लागि पैसा",
+    "g4": "बच्चाको शिक्षा",
+    "g5": "आपतकालीन कोष",
+    "g6": "सेवानिवृत्ति",
+    "g7": "सम्पत्ति निर्माण",
+    "youText": "तपाईं (अटो-पे)",
+    "smartRouting": "स्मार्ट राउटिङ",
+    "compounding": "कम्पाउन्डिङ"
+  },
+  "testimonialsSection": {
+    "label": "पहिलो पटक लगानीकर्ताहरूद्वारा विश्वसनीय",
+    "headline": "हिमाली क्षेत्रभर पहिलो पटक लगानीकर्ताहरूद्वारा विश्वसनीय",
+    "t1Quote": "पहिलो SIP यो एपबाट सजिलैसँग सुरु गरेको। राम्रो लाग्यो। आजसम्म ६ महिना पुग्यो।",
+    "t1Loc": "गान्तोक, सिक्किम",
+    "t2Quote": "म ३ वर्षदेखि म्युचुअल फन्डको बारेमा सोच्दै थिएँ। EazySip ले ६ मिनेटमा सेटअप गर्‍यो। पहिले नै सुरु गरेको भए हुन्थ्यो।",
+    "t2Loc": "सिलिगुडी, उत्तर बंगाल",
+    "t3Quote": "मेरी श्रीमती र मैले दुवैले गत दशैंमा ₹१०० SIP सुरु गर्‍यौं। खाताबाट जाँदा थाहा पनि हुँदैन।",
+    "t3Loc": "नाम्ची, सिक्किम",
+    "t4Quote": "मेरो बुवाले बुझ्नु भयो — त्यो नै सबैभन्दा ठूलो कुरा हो।",
+    "t4Loc": "कालिम्पोङ"
+  },
+  "header": {
+    "navHome": "Home",
+    "navAbout": "About Us",
+    "navLearn": "Learn",
+    "navCalculator": "Calculator",
+    "downloadApp": "Download App"
+  },
+  "footer": {
+    "tagline": "India's first Nepali-language mutual fund app. SIPs from ₹100. SEBI compliant, AMFI registered.",
+    "appStoreBadge": "App Store",
+    "playStoreBadge": "Play Store",
+    "educationCentre": "Education Centre"
+  },
+  "sipCalculatorPanel": {
+    "eyebrow": "Show Your Potential",
+    "subTagline": "Plan your financial future with our SIP calculator.",
+    "yrAbbr": "Yr",
+    "oneYr": "1 Yr",
+    "thirtyYr": "30 Yr",
+    "onePct": "1%",
+    "thirtyPct": "30%",
+    "futureBalance": "Potential Future Balance"
+  },
+  "sipCalcPage": {
+    "eyebrow": "SIP Calculator",
+    "heroHeadline": "See Your Wealth Grow",
+    "heroSubtitle": "See how small monthly investments can grow into real wealth over time with our SIP calculator.",
+    "whyEyebrow": "Why SIP?",
+    "whyHeadline": "Why SIP Works",
+    "faqEyebrow": "FAQ",
+    "faqHeadline": "Frequently Asked Questions",
+    "ctaHeadline": "Ready to start your SIP today?",
+    "b1Title": "Disciplined Investing",
+    "b1Body": "SIP automates your investment every month — market noise stops affecting your plan.",
+    "b2Title": "Rupee-Cost Averaging",
+    "b2Body": "You buy more units when prices dip and fewer when they rise, naturally lowering your average cost.",
+    "b3Title": "Power of Compounding",
+    "b3Body": "Your returns earn their own returns. The earlier you start, the more compounding works in your favour.",
+    "b4Title": "Start from ₹100",
+    "b4Body": "No large capital needed. Start with as little as ₹100/month and scale up as your income grows.",
+    "q1": "What is the minimum amount to start a SIP?",
+    "a1": "You can start a SIP with as little as ₹100 per month in most mutual fund schemes.",
+    "q2": "Can I stop my SIP anytime?",
+    "a2": "Yes, you can stop or pause your SIP at any time without any penalty.",
+    "q3": "Are returns guaranteed in SIP?",
+    "a3": "No, mutual fund investments are subject to market risks and returns are not guaranteed.",
+    "q4": "How do I track my SIP performance?",
+    "a4": "You can track your SIP performance easily through the eazySIP app dashboard.",
+    "q5": "What is the difference between SIP and lumpsum?",
+    "a5": "Lumpsum requires a large upfront capital. SIP lets you invest small amounts regularly, spreading out market risk over time."
+  },
+  "watch": {
+    "videoLibraryEyebrow": "Video Library",
+    "heroHeadline": "Step into the World of Mutual Funds",
+    "heroSubtitle": "Engaging and educational videos to help you understand mutual funds — in your language.",
+    "nowPlaying": "Now Playing",
+    "ctaHeadline": "Ready to put your knowledge to work?",
+    "downloadEazySip": "Download eazySIP",
+    "tabs": [
+      {
+        "id": "get-started",
+        "label": "Get Started with eazySIP",
+        "videos": [
+          {
+            "title": "What is eazySIP? Your Nepali-language investing companion",
+            "duration": "1:30",
+            "description": "A quick introduction to eazySIP — India's first Nepali-language mutual fund app built for the Nepali-speaking community across Sikkim, Darjeeling, and beyond.",
+            "emoji": "🐼"
+          },
+          {
+            "title": "How to complete your KYC in Nepali — step by step",
+            "duration": "2:15",
+            "description": "Walk through the entire KYC process in the eazySIP app — from uploading your PAN card to completing the video verification call in Nepali.",
+            "emoji": "✅"
+          },
+          {
+            "title": "Starting your first SIP in 3 clicks",
+            "duration": "1:45",
+            "description": "See how fast and simple it is to pick a goal, choose a fund, and set up your monthly SIP with UPI AutoPay — all inside eazySIP.",
+            "emoji": "🚀"
+          },
+          {
+            "title": "Understanding your eazySIP Dashboard",
+            "duration": "2:30",
+            "description": "Learn how to read your portfolio dashboard — track your invested amount, current value, returns, and individual SIP performance all in one screen.",
+            "emoji": "📊"
+          }
+        ]
+      },
+      {
+        "id": "sip-explained",
+        "label": "SIP Explained",
+        "videos": [
+          {
+            "title": "What is a SIP? Explained simply in Nepali",
+            "duration": "2:00",
+            "description": "A simple, jargon-free explanation of Systematic Investment Plans — what they are, how they work, and why they are the easiest way to start investing.",
+            "emoji": "📈"
+          },
+          {
+            "title": "Why SIP beats lump sum investing every time",
+            "duration": "2:30",
+            "description": "Through the power of rupee-cost averaging, a monthly SIP removes the stress of timing the market — and historically outperforms lump sum investing over the long run.",
+            "emoji": "💡"
+          },
+          {
+            "title": "How UPI AutoPay makes your SIP effortless",
+            "duration": "1:45",
+            "description": "Set up UPI AutoPay once and your SIP runs on autopilot — no manual payments, no missed instalments, and no stress. Here's how to activate it in eazySIP.",
+            "emoji": "⚡"
+          },
+          {
+            "title": "Step-up your SIP to match your income growth",
+            "duration": "2:15",
+            "description": "Learn how Step-Up SIP automatically increases your monthly investment by a set percentage each year — a simple way to grow your wealth faster as you earn more.",
+            "emoji": "📉"
+          }
+        ]
+      },
+      {
+        "id": "goal-planning",
+        "label": "Goal Planning",
+        "videos": [
+          {
+            "title": "How to set financial goals in eazySIP",
+            "duration": "2:00",
+            "description": "Walk through eazySIP's goal-based investing feature — choose from preset goals like retirement, education, or wedding, or create your own custom goal.",
+            "emoji": "🎯"
+          },
+          {
+            "title": "Planning for your child's education with SIP",
+            "duration": "2:30",
+            "description": "Education costs are rising 10–12% every year. This video shows you exactly how much to invest monthly today to secure your child's higher education expenses.",
+            "emoji": "🎓"
+          },
+          {
+            "title": "Building your retirement fund — where to start",
+            "duration": "3:00",
+            "description": "A practical guide to retirement planning with mutual funds — how much you need, which funds to pick, and how eazySIP's goal tracker keeps you on course.",
+            "emoji": "🏡"
+          }
+        ]
+      },
+      {
+        "id": "fund-types",
+        "label": "Types of Mutual Funds",
+        "videos": [
+          {
+            "title": "Equity vs Debt: Which type of fund is right for you?",
+            "duration": "2:30",
+            "description": "A clear comparison of equity and debt mutual funds — understand the risk-return trade-off and figure out which type matches your investment horizon and goals.",
+            "emoji": "⚖️"
+          },
+          {
+            "title": "What are Index Funds? A beginner's guide",
+            "duration": "2:00",
+            "description": "Index funds passively track the market — they're low-cost, transparent, and a great starting point for new investors. Learn what makes them different from actively managed funds.",
+            "emoji": "📉"
+          },
+          {
+            "title": "Understanding Hybrid Funds — the best of both worlds",
+            "duration": "2:15",
+            "description": "Hybrid funds blend equity and debt to give you growth with stability. This video explains the different types of hybrid funds and who they are best suited for.",
+            "emoji": "🔀"
+          }
+        ]
+      },
+      {
+        "id": "investor-safety",
+        "label": "Investor Safety",
+        "videos": [
+          {
+            "title": "How eazySIP keeps your money and data safe",
+            "duration": "1:30",
+            "description": "eazySIP uses 256-bit encryption, is SEBI-compliant, and partners with BSE StAR MF for secure transaction processing. Your money never sits in eazySIP's account.",
+            "emoji": "🛡️"
+          },
+          {
+            "title": "Understanding SEBI regulations and your rights as an investor",
+            "duration": "2:00",
+            "description": "SEBI regulates all mutual funds in India, protecting investors. Learn what protections you have, where to file complaints, and how to verify if a fund is legitimate.",
+            "emoji": "⚖️"
+          },
+          {
+            "title": "How to spot and avoid fake investment schemes",
+            "duration": "2:30",
+            "description": "Too-good-to-be-true returns, pressure to invest immediately, unverified WhatsApp groups — learn the red flags of investment fraud and how to stay safe.",
+            "emoji": "🚨"
+          }
+        ]
+      }
+    ]
+  },
+  "learn": {
+    "educationCentreEyebrow": "Education Centre",
+    "heroHeadline": "Your Guide to Understanding Mutual Funds",
+    "heroSubtitle": "From basics to advanced — understand mutual funds at your own pace.",
+    "featuredArticleEyebrow": "Featured Article",
+    "readArticle": "Read Article →",
+    "ctaHeadline": "Ready to start investing today?",
+    "downloadEazySip": "Download eazySIP",
+    "tabs": [
+      {
+        "id": "new",
+        "label": "New to Mutual Funds",
+        "featured": {
+          "title": "Why is investing better than saving?",
+          "readTime": "4 min read",
+          "excerpt": "Saving keeps your money safe, but investing makes it grow. With inflation eating into savings, staying invested in mutual funds is the only way to build real wealth over time."
+        },
+        "sections": [
+          {
+            "id": "basics",
+            "label": "Basics",
+            "articles": [
+              {
+                "title": "What is a Mutual Fund?",
+                "readTime": "3 min",
+                "excerpt": "A mutual fund pools money from many investors to buy a diversified portfolio of stocks, bonds, or other securities."
+              },
+              {
+                "title": "Why invest through Mutual Funds instead of Fixed Deposits?",
+                "readTime": "10 min",
+                "excerpt": "Fixed deposits offer fixed but low returns. Mutual funds, especially equity ones, have historically delivered returns that beat inflation over the long run."
+              },
+              {
+                "title": "What is the power of compounding?",
+                "readTime": "3 min",
+                "excerpt": "Compounding means your returns earn returns. Starting early even with small amounts can lead to significant wealth over 10–20 years."
+              },
+              {
+                "title": "How can Mutual Funds help create wealth?",
+                "readTime": "5 min",
+                "excerpt": "By investing regularly in equity funds over a long period, you benefit from market growth, compounding, and professional fund management."
+              },
+              {
+                "title": "What is an Asset Management Company (AMC)?",
+                "readTime": "2 min",
+                "excerpt": "An AMC is a company that collects money from investors and invests it in various assets on their behalf, managed by experienced fund managers."
+              },
+              {
+                "title": "How to get started with Mutual Fund investments?",
+                "readTime": "10 min",
+                "excerpt": "Complete your KYC, choose a goal, pick a fund that matches your risk appetite, and start a SIP. eazySIP makes this possible in your language."
+              }
+            ]
+          },
+          {
+            "id": "sip",
+            "label": "Systematic Investment Plan (SIP)",
+            "articles": [
+              {
+                "title": "What is a SIP and how does it work?",
+                "readTime": "10 min",
+                "excerpt": "A SIP lets you invest a fixed amount every month automatically. It builds discipline, removes the need to time the market, and benefits from rupee-cost averaging."
+              },
+              {
+                "title": "Why is SIP better than lump sum investing?",
+                "readTime": "3 min",
+                "excerpt": "SIP spreads your investment across market cycles, reducing risk. You don't need a large sum upfront — even ₹100/month can build a significant corpus."
+              },
+              {
+                "title": "What is the cost of delaying your SIP by 5 years?",
+                "readTime": "10 min",
+                "excerpt": "Delaying a ₹5,000/month SIP by just 5 years can cost you ₹25–30 lakh in final corpus. The earlier you start, the more compounding works for you."
+              },
+              {
+                "title": "What is a Step-Up SIP?",
+                "readTime": "3 min",
+                "excerpt": "A Step-Up SIP automatically increases your monthly investment amount by a fixed percentage each year, helping you invest more as your income grows."
+              },
+              {
+                "title": "What is a Systematic Withdrawal Plan (SWP)?",
+                "readTime": "3 min",
+                "excerpt": "An SWP lets you withdraw a fixed amount from your mutual fund every month — ideal for generating regular income in retirement."
+              }
+            ]
+          },
+          {
+            "id": "risks",
+            "label": "Benefits & Risks",
+            "articles": [
+              {
+                "title": "Should I risk my savings in Mutual Funds?",
+                "readTime": "10 min",
+                "excerpt": "All investments carry some risk, but mutual funds are diversified and regulated by SEBI. The risk is manageable and reduces significantly over a long investment horizon."
+              },
+              {
+                "title": "Why should market volatility not bother you?",
+                "readTime": "5 min",
+                "excerpt": "Short-term market dips are normal. SIP investors actually benefit from volatility through rupee-cost averaging — buying more units when prices fall."
+              },
+              {
+                "title": "How do Mutual Funds help manage risk?",
+                "readTime": "3 min",
+                "excerpt": "Mutual funds invest across many stocks and bonds, so poor performance of one company doesn't significantly impact your overall portfolio."
+              },
+              {
+                "title": "Do equity and debt funds carry different risks?",
+                "readTime": "10 min",
+                "excerpt": "Equity funds carry market risk but offer higher long-term returns. Debt funds are more stable but give lower returns. Choosing the right type depends on your goal and time horizon."
+              }
+            ]
+          },
+          {
+            "id": "returns",
+            "label": "Mutual Fund Returns",
+            "articles": [
+              {
+                "title": "What is Absolute Return?",
+                "readTime": "2 min",
+                "excerpt": "Absolute return is the total percentage gain or loss on your investment from the day you invested, regardless of how long it took."
+              },
+              {
+                "title": "What is XIRR and why does it matter?",
+                "readTime": "3 min",
+                "excerpt": "XIRR (Extended Internal Rate of Return) gives the annualised return on investments with irregular cash flows like SIPs — it's the most accurate way to measure SIP returns."
+              },
+              {
+                "title": "Mutual Funds vs Fixed Deposits: Which earns more?",
+                "readTime": "5 min",
+                "excerpt": "Over 10+ years, equity mutual funds have historically given 12–15% annual returns vs 5–7% from FDs. After inflation and taxes, FD returns can even go negative."
+              }
+            ]
+          },
+          {
+            "id": "withdraw",
+            "label": "Withdrawing from Mutual Funds",
+            "articles": [
+              {
+                "title": "How soon can I withdraw from Mutual Funds?",
+                "readTime": "3 min",
+                "excerpt": "Equity fund redemptions typically credit to your bank within 2–3 business days (T+2). Liquid funds credit on the same or next day."
+              },
+              {
+                "title": "What costs do I pay when redeeming Mutual Fund units?",
+                "readTime": "3 min",
+                "excerpt": "You may pay an exit load (typically 1% if redeemed within 1 year) and applicable taxes on capital gains depending on your holding period."
+              },
+              {
+                "title": "What is Exit Load and when does it apply?",
+                "readTime": "2 min",
+                "excerpt": "Exit load is a fee charged by the fund house if you redeem units before a specified period (usually 1 year for equity funds). It discourages short-term trading."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "more",
+        "label": "More about Mutual Funds",
+        "featured": {
+          "title": "How to build a retirement corpus with Mutual Funds?",
+          "readTime": "5 min read",
+          "excerpt": "Retirement can last 25–30 years. Starting a SIP in equity funds early, then gradually shifting to debt funds as you near retirement, is the proven strategy to build a large enough corpus."
+        },
+        "sections": [
+          {
+            "id": "types",
+            "label": "Types of Mutual Funds",
+            "articles": [
+              {
+                "title": "What are Equity Funds?",
+                "readTime": "10 min",
+                "excerpt": "Equity funds invest primarily in stocks. They carry higher risk but offer the potential for higher long-term returns — ideal for goals 5+ years away."
+              },
+              {
+                "title": "What are Debt Funds?",
+                "readTime": "3 min",
+                "excerpt": "Debt funds invest in bonds and fixed-income instruments. They are more stable than equity funds and suit short-to-medium term goals."
+              },
+              {
+                "title": "What are Index Funds?",
+                "readTime": "10 min",
+                "excerpt": "Index funds passively track a market index like Nifty 50 or Sensex. They have very low expense ratios and are a great option for first-time investors."
+              },
+              {
+                "title": "What are Hybrid Funds?",
+                "readTime": "3 min",
+                "excerpt": "Hybrid funds invest in both equity and debt, offering a balance of growth and stability. They are ideal for moderate-risk investors."
+              },
+              {
+                "title": "ETFs vs Mutual Funds: What's the difference?",
+                "readTime": "10 min",
+                "excerpt": "ETFs trade on exchanges like stocks throughout the day, while mutual fund NAV is calculated once daily. Both have pros and cons depending on your investment style."
+              }
+            ]
+          },
+          {
+            "id": "goals",
+            "label": "Goal Planning",
+            "articles": [
+              {
+                "title": "Should I set a goal before starting a SIP?",
+                "readTime": "3 min",
+                "excerpt": "Having a goal helps you pick the right fund, determine the right amount, and stay invested without panic-selling during market dips."
+              },
+              {
+                "title": "Which fund should I choose for long-term goals (10+ years)?",
+                "readTime": "10 min",
+                "excerpt": "For goals 10+ years away, diversified equity funds or index funds are generally recommended, as they have historically delivered the best inflation-beating returns."
+              },
+              {
+                "title": "How do I plan for my child's education?",
+                "readTime": "5 min",
+                "excerpt": "Education costs double every 8–10 years. Starting a SIP today in equity funds ensures you build enough corpus by the time your child is ready for college."
+              },
+              {
+                "title": "Which fund is right for a mid-term goal (3–5 years)?",
+                "readTime": "10 min",
+                "excerpt": "For goals 3–5 years away, balanced or hybrid funds, or aggressive debt funds like dynamic bond funds, offer a good mix of growth and stability."
+              }
+            ]
+          },
+          {
+            "id": "retirement",
+            "label": "Planning for Retirement",
+            "articles": [
+              {
+                "title": "How to build a retirement corpus with Mutual Funds?",
+                "readTime": "5 min",
+                "excerpt": "Start early with equity funds, gradually shift to debt as you approach retirement. Use an SWP to generate monthly income post-retirement."
+              },
+              {
+                "title": "How much SIP do I need to retire comfortably?",
+                "readTime": "10 min",
+                "excerpt": "Use our SIP calculator to estimate the monthly investment needed. As a rule of thumb, aim to build a corpus that generates monthly income equal to 70–80% of your pre-retirement salary."
+              },
+              {
+                "title": "Why start retirement planning in your 30s?",
+                "readTime": "3 min",
+                "excerpt": "Starting a ₹5,000/month SIP at age 30 can grow to ₹1.75 crore by age 60 (at 12% returns). Waiting until 40 gives only ₹50 lakh for the same investment."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "lastUpdatedLabel": "Last Updated:",
+    "lastUpdatedDate": "July 20, 2026",
+    "subheading": "EazySip | Dzambala Financial Services LLP",
+    "sections": [
+      {
+        "id": "1",
+        "title": "1. Scope & Applicability",
+        "body": "This Privacy Policy applies to the EazySip website and mobile application (the \"Platform\") operated by Dzambala Financial Services LLP (\"Dzambala\", \"we\", \"us\"), and governs the collection, use, storage, sharing and protection of personal data of users, prospects, investors and their nominees/representatives (\"you\") who access the Platform. It supplements, and must be read with, the EazySip Website Disclaimer and Terms & Conditions."
+      },
+      {
+        "id": "2",
+        "title": "2. Legal Framework",
+        "body": "We currently process personal data in accordance with the Information Technology Act, 2000 and the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011 (\"SPDI Rules\"). We are also aligning our practices with the Digital Personal Data Protection Act, 2023 (\"DPDP Act\"), whose substantive compliance obligations are being phased in under the Digital Personal Data Protection Rules, 2025; where a DPDP Act obligation is not yet in force, we follow it as a voluntary best practice pending statutory applicability."
+      },
+      {
+        "id": "3",
+        "title": "3. Information We Collect",
+        "body": "We collect: (a) identity/KYC information (name, PAN, Aadhaar masked/reference number, photograph, signature, address proof); (b) contact details (mobile, email, postal address); (c) financial information (bank details, income/tax status, investment and transaction history, portfolio holdings), which is Sensitive Personal Data or Information under the SPDI Rules; (d) technical data (IP address, device ID, cookies, log files); and (e) your communications with our Sahayogis/support team."
+      },
+      {
+        "id": "4",
+        "title": "4. Purpose & Lawful Basis",
+        "body": "Data is collected with your consent and/or as necessary to perform KYC/onboarding and distribution services, comply with SEBI/AMFI/PMLA/KRA obligations, process transactions, prevent fraud, and improve the Platform. Sensitive personal data is collected only where necessary for a lawful purpose connected with our functions."
+      },
+      {
+        "id": "5",
+        "title": "5. Sharing & Disclosure",
+        "body": "Your data may be shared with AMCs, Registrars & Transfer Agents (CAMS, KFin Technologies), KYC Registration Agencies, payment gateways/UPI/banking partners, SEBI/AMFI/FIU-IND and other regulators/statutory authorities, and our auditors, cloud-hosting and IT service providers, strictly for the purposes stated in this Policy and under confidentiality obligations. We do not sell personal data to third parties for their independent marketing use."
+      },
+      {
+        "id": "6",
+        "title": "6. Cross-Border Transfer",
+        "body": "Personal data may be processed on servers located in India or, where our cloud service providers so require, outside India, except to any country restricted by the Central Government under the DPDP Act."
+      },
+      {
+        "id": "7",
+        "title": "7. Data Retention",
+        "body": "Records, including KYC and transaction data, are retained for the periods mandated under the Prevention of Money Laundering (Maintenance of Records) Rules, 2005 and applicable SEBI/AMFI recordkeeping norms (currently a minimum of five years from the end of the business relationship, or longer if directed by a regulator/court), and are erased or anonymised thereafter in line with the DPDP Act's purpose-limitation principle."
+      },
+      {
+        "id": "8",
+        "title": "8. Security",
+        "body": "We maintain reasonable security practices and procedures, including encryption, access controls and a documented information-security policy, as required under the SPDI Rules and Section 43A of the IT Act. Cyber-security incidents are handled and reported to CERT-In within the timelines prescribed under the CERT-In Cyber Security Directions, 2022 (currently within 6 hours of notice, for reportable incidents). No system is completely secure; see also Limitation of Liability in the Website Disclaimer."
+      },
+      {
+        "id": "9",
+        "title": "9. Your Rights",
+        "body": "Subject to applicable law, you may request access to, correction of, or erasure of your personal data, withdraw consent prospectively, nominate a representative to exercise your rights in the event of death/incapacity, and raise a grievance with our contact below; unresolved grievances may, once the relevant DPDP Act provisions are in force, be escalated to the Data Protection Board of India."
+      },
+      {
+        "id": "10",
+        "title": "10. Cookies",
+        "body": "We use cookies and similar technologies to operate the Platform, remember preferences, and for analytics; you may control cookies through your browser settings, though some features may not function without them."
+      },
+      {
+        "id": "11",
+        "title": "11. Children's Data",
+        "body": "The Platform is intended for use by persons aged 18 years or older who are KYC-compliant; we do not knowingly collect personal data of children, and where processing on behalf of a minor investor is unavoidable (e.g., guardian-operated folios), it is undertaken with verifiable consent of the parent/lawful guardian."
+      },
+      {
+        "id": "12",
+        "title": "12. Marketing Communications",
+        "body": "We may send service, transactional and (with consent, where required) promotional communications by SMS, email, push notification or WhatsApp; you may opt out of promotional communications at any time."
+      },
+      {
+        "id": "13",
+        "title": "13. Third-Party Links",
+        "body": "This Policy does not apply to third-party websites or apps linked from the Platform; please review their respective privacy policies."
+      },
+      {
+        "id": "14",
+        "title": "14. Grievance Officer / Data Protection Contact",
+        "body": "For any privacy-related query, complaint or rights request, contact our Grievance Officer BINAY PRADHAN (Email: binay@eazysip.com | Phone: +91 75570 51930). We aim to acknowledge queries within 24 hours and resolve them within the timelines prescribed under applicable law.",
+        "contactDetails": {
+          "officer": "BINAY PRADHAN",
+          "email": "binay@eazysip.com",
+          "phone": "+91 75570 51930"
+        }
+      },
+      {
+        "id": "15",
+        "title": "15. Changes to This Policy",
+        "body": "We may update this Privacy Policy from time to time; the \"last updated\" date above reflects the most recent revision, and material changes will be notified through the Platform."
+      },
+      {
+        "id": "16",
+        "title": "16. Governing Law",
+        "body": "This Policy is governed by the laws of India, subject to the jurisdiction clause in the Website Disclaimer and Terms & Conditions."
+      }
+    ]
+  },
+  "terms": {
+    "lastUpdatedLabel": "Last Updated:",
+    "lastUpdatedDate": "August 2026",
+    "subheading": "EazySip | Dzambala Financial Services LLP | AMFI-registered MFD ARN-313834",
+    "sections": [
+      {
+        "id": "1",
+        "title": "1. Acceptance & Eligibility",
+        "body": "By accessing or using the EazySip website/app (the \"Platform\"), you agree to these Terms & Conditions (\"Terms\"). You must be at least 18 years old, capable of entering into a valid contract under the Indian Contract Act, 1872, and KYC-compliant to transact in mutual fund schemes through the Platform."
+      },
+      {
+        "id": "2",
+        "title": "2. Nature of Services",
+        "body": "Dzambala Financial Services LLP provides the Platform in its capacity as an AMFI-registered Mutual Fund Distributor (ARN-313834) only. Our regulatory status, the capacity in which services are offered, and the risk factors applicable to mutual fund investments are set out in the EazySip Website Disclaimer, which forms part of these Terms."
+      },
+      {
+        "id": "3",
+        "title": "3. Registration & KYC",
+        "body": "You must complete KYC in accordance with SEBI KYC Registration Agency (KRA) Regulations, 2011 and the Prevention of Money Laundering Act, 2002 and rules thereunder, including Aadhaar-based e-KYC where you consent to and avail of such facility. We may suspend, restrict or decline any transaction where KYC is incomplete or non-compliant, or where required under our anti-money-laundering obligations, including reporting suspicious transactions to the Financial Intelligence Unit-India (FIU-IND)."
+      },
+      {
+        "id": "4",
+        "title": "4. Transactions, SIPs & E-Mandates",
+        "body": "Purchase, SIP, switch and redemption instructions are subject to the scheme's offer document, applicable NAV and cut-off-time norms prescribed by SEBI, and processing by the concerned AMC/RTA. SIP auto-debits are executed under e-mandates registered under the RBI Digital Payments – E-Mandate Framework; recurring debits up to the RBI-prescribed threshold may be processed without additional-factor authentication once the mandate is registered with authentication, subject to prior debit notification, and you may modify or cancel your e-mandate at any time free of charge. We are not liable for delays in NAV application, credit or redemption caused by AMCs, RTAs, banks or payment systems."
+      },
+      {
+        "id": "5",
+        "title": "5. Fees, Commission & Direct Plan Disclosure",
+        "body": "We do not charge you a separate fee for distribution services; we receive commission/trail brokerage from AMCs for schemes distributed through the Platform, which forms part of the scheme's regular-plan expense ratio. You have the option to invest directly with the AMC under a Direct Plan, which carries a lower expense ratio as it excludes distributor commission; details of commission earned across comparable schemes are available on request, in accordance with AMFI norms."
+      },
+      {
+        "id": "6",
+        "title": "6. Investor Charter & Grievance Escalation",
+        "body": "Your rights and our responsibilities as a distributor, along with grievance-redressal timelines, are set out in the SEBI Investor Charter for Mutual Funds, available on the Platform. Complaints may first be raised with our Grievance Officer; if unresolved, you may approach SEBI SCORES, and thereafter the SEBI-mandated Online Dispute Resolution portal (SMART ODR) for online conciliation/arbitration of securities-market disputes."
+      },
+      {
+        "id": "7",
+        "title": "7. User Obligations",
+        "body": "You must provide true, accurate and current information; keep your KYC, contact and bank details updated; safeguard your login credentials and OTPs; use only your own duly KYC-verified folios; review all transaction confirmations promptly; and comply with applicable law, including PMLA and FEMA (for NRI users), at all times."
+      },
+      {
+        "id": "8",
+        "title": "8. Prohibited Uses",
+        "body": "You must not use the Platform to upload or transmit unlawful, defamatory, infringing, fraudulent or misleading content, impersonate any person, circumvent KYC/AML checks, or misuse the Platform for money laundering or any illegal purpose, in line with the due-diligence requirements applicable to intermediaries under the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021."
+      },
+      {
+        "id": "9",
+        "title": "9. Suspension & Termination",
+        "body": "We may suspend or terminate your access, with or without notice, where required by a regulator/court, on reasonable suspicion of fraud, AML/KYC non-compliance, or breach of these Terms. You may close your account at any time, subject to settlement of pending transactions/obligations."
+      },
+      {
+        "id": "10",
+        "title": "10. Intellectual Property",
+        "body": "All intellectual property in the Platform belongs to Dzambala and/or its licensors, as further detailed in the Website Disclaimer, and no rights are transferred to you under these Terms."
+      },
+      {
+        "id": "11",
+        "title": "11. Limitation of Liability & Indemnity",
+        "body": "Our liability is limited as set out in the Website Disclaimer. You agree to indemnify and hold Dzambala harmless against losses, claims or proceedings arising from your breach of these Terms, provision of inaccurate information, or unauthorised use of your account attributable to your negligence, except to the extent caused by our fraud, wilful default or gross negligence."
+      },
+      {
+        "id": "12",
+        "title": "12. Third-Party Services",
+        "body": "Use of third-party services integrated with the Platform (payment gateways, UPI, banks, KRAs, CAMS/KFin, cloud/API providers) is subject to those third parties' own terms, and Dzambala is not liable for their acts, omissions or outages, as further described in the Website Disclaimer."
+      },
+      {
+        "id": "13",
+        "title": "13. Electronic Communications & Records",
+        "body": "You consent to receive communications, instructions, confirmations and records electronically (SMS/email/app/WhatsApp); such electronic records and communications are valid and enforceable under Section 4 and Section 10A of the Information Technology Act, 2000."
+      },
+      {
+        "id": "14",
+        "title": "14. Grievance Officer",
+        "body": "In accordance with the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, our Grievance Officer is BINAY PRADHAN (Email: binay@eazysip.com | Phone: 7557051930). We will acknowledge grievances within 24 hours and endeavour to resolve them within 15 days; an appeal against the Grievance Officer's decision may be filed with the Grievance Appellate Committee within 30 days of such decision."
+      },
+      {
+        "id": "15",
+        "title": "15. Force Majeure",
+        "body": "Neither party shall be liable for any failure or delay in performance caused by circumstances beyond its reasonable control, including natural disasters, war, pandemic, internet/telecom failure, or governmental/regulatory action."
+      },
+      {
+        "id": "16",
+        "title": "16. General",
+        "body": "These Terms constitute the entire agreement between you and Dzambala regarding the Platform. If any provision is held invalid, the remainder shall continue in force. Our failure to enforce any provision is not a waiver. You may not assign your rights under these Terms without our written consent."
+      },
+      {
+        "id": "17",
+        "title": "17. Governing Law & Jurisdiction",
+        "body": "These Terms are governed by the laws of India. Subject to any exclusive statutory forum (including SEBI/Securities Appellate Tribunal, PMLA authorities, SEBI's SCORES/SMART ODR mechanisms, or consumer fora under the Consumer Protection Act, 2019), courts at Gangtok, Sikkim shall have jurisdiction."
+      },
+      {
+        "id": "18",
+        "title": "18. Amendments",
+        "body": "We may amend these Terms at any time; continued use of the Platform after such amendment constitutes acceptance."
+      },
+      {
+        "id": "19",
+        "title": "19. Contact & Grievance Redressal",
+        "body": "For any formal grievances, regulatory queries, or correspondence, please reach out using the official details below:",
+        "contactDetails": {
+          "registeredOffice": "Panday Colony, Gyalzing, Sikkim, India",
+          "llpin": "ACJ-3325",
+          "arn": "313834",
+          "complianceOfficer": "BINAY PRADHAN",
+          "email": "binay@eazysip.com",
+          "phone": "+91 75570 51930"
+        }
+      }
+    ]
+  },
+  "riskDisclosure": {
+    "lastUpdatedLabel": "Last Updated:",
+    "lastUpdatedDate": "August 2026",
+    "subheading": "EazySip | Dzambala Financial Services LLP | AMFI-registered MFD ARN-313834",
+    "sections": [
+      {
+        "id": "1",
+        "title": "1. Regulatory Status",
+        "body": "EazySip is owned and operated by Dzambala Financial Services LLP (\"Dzambala\", \"we\", \"us\", \"our\"), an AMFI-registered Mutual Fund Distributor holding ARN-313834; this ARN is quoted in all our communications in accordance with AMFI norms. Dzambala is NOT registered with SEBI as an Investment Adviser, Portfolio Manager, Stock Broker, Research Analyst or Depository Participant, and is not a Bank, NBFC or Insurance Company. We act solely as a distributor of mutual fund schemes of various AMCs; any scheme information or comparison provided is incidental to distribution and does not constitute investment advice, and no advisory or fiduciary relationship is created with any user unless a separate written investment advisory agreement is executed with a SEBI-registered Investment Adviser. Commission/trail brokerage earned by us from AMCs is disclosed in scheme documents and consolidated account statements as mandated by SEBI."
+      },
+      {
+        "id": "2",
+        "title": "2. Mutual Fund Risk Disclosure",
+        "body": "Mutual Fund investments are subject to market risks, read all scheme related documents carefully. NAVs of schemes may go up or down depending on the factors and forces affecting securities markets. There is no assurance that a scheme's investment objective will be achieved, and past performance of any scheme, AMC or its sponsor is not indicative of and does not guarantee future performance."
+      },
+      {
+        "id": "3",
+        "title": "3. No Investment Advice",
+        "body": "All website/app content, including blogs, articles, calculators, videos, reels, webinars, newsletters and social media posts, is for general education and information only. Nothing constitutes investment, tax or legal advice, research, or a personalised recommendation to buy, sell or hold any security or scheme, and must not be relied on as such."
+      },
+      {
+        "id": "4",
+        "title": "4. Suitability",
+        "body": "Before investing, users must independently evaluate (or consult a qualified professional on) their risk appetite, financial objectives, investment horizon, liquidity needs and tax implications. Investment decisions are made solely at the user's own discretion and risk."
+      },
+      {
+        "id": "5",
+        "title": "5. Calculators",
+        "body": "SIP, retirement, goal, inflation and EMI calculators are illustrative only, based on user-input and assumed rates of return/inflation. They do not guarantee or predict actual outcomes, which may differ materially."
+      },
+      {
+        "id": "6",
+        "title": "6. Third-Party Services",
+        "body": "EazySip relies on third parties including KYC Registration Agencies, CAMS, KFin Technologies, payment gateways, UPI/banking partners, telecom, SMS/email/OTP and cloud/API providers. Dzambala does not control and is not liable for outages, delays or failures attributable to such third parties."
+      },
+      {
+        "id": "7",
+        "title": "7. Information Accuracy",
+        "body": "Information is compiled from sources believed reliable and is provided \"as is\" without warranty of accuracy or completeness, is subject to change without notice, and market data may be delayed; errors or omissions may occur."
+      },
+      {
+        "id": "8",
+        "title": "8. Limitation of Liability",
+        "body": "To the fullest extent permitted by Indian law, Dzambala disclaims liability for investment losses, market volatility, technology or cyber failures, internet/telecom interruptions, force majeure, and NAV, transaction or redemption delays caused by AMCs, RTAs, banks or other third parties. This clause does NOT exclude liability that cannot lawfully be excluded, including for fraud, wilful default, gross negligence, or statutory obligations under SEBI Regulations or the Consumer Protection Act, 2019."
+      },
+      {
+        "id": "9",
+        "title": "9. Intellectual Property",
+        "body": "The EazySip name, logo, website, software, graphics, videos, articles, designs and branding are the exclusive property of Dzambala Financial Services LLP and/or its licensors. No use is permitted without prior written consent."
+      },
+      {
+        "id": "10",
+        "title": "10. User Obligations",
+        "body": "Users are responsible for safeguarding login credentials/OTPs, verifying transaction details before confirming, keeping KYC updated, ensuring accurate bank details, reviewing transaction confirmations, and complying with applicable law."
+      },
+      {
+        "id": "11",
+        "title": "11. Privacy & Data Protection",
+        "body": "Personal data is collected, stored, processed and shared per our Privacy Policy, the Information Technology Act, 2000 (and rules thereunder), and the Digital Personal Data Protection Act, 2023, as and when applicable, based on user consent or as otherwise permitted by law."
+      },
+      {
+        "id": "12",
+        "title": "12. Hyperlinks",
+        "body": "Links to third-party websites are provided for convenience only and do not imply endorsement; Dzambala is not responsible for third-party content."
+      },
+      {
+        "id": "13",
+        "title": "13. Advertisements & Educational Content",
+        "body": "All promotional and educational content (including social media) is issued in line with the SEBI Advertisement Code and applicable AMFI/SEBI guidelines on digital communication, and does not contain performance claims or investment recommendations."
+      },
+      {
+        "id": "14",
+        "title": "14. Governing Law",
+        "body": "This Disclaimer is governed by the laws of India. Subject to any exclusive statutory forum (e.g., SEBI/Securities Appellate Tribunal, PMLA authorities, or consumer fora), courts at Gangtok, Sikkim shall have jurisdiction."
+      },
+      {
+        "id": "15",
+        "title": "15. Amendments",
+        "body": "We may amend this website, our services, policies and this Disclaimer at any time without prior notice. Continued use of the platform signifies acceptance of the amended terms."
+      },
+      {
+        "id": "16",
+        "title": "16. Contact & Grievance Redressal",
+        "body": "For any queries, compliance matters or complaints, please reach out to our official contact below:",
+        "contactDetails": {
+          "registeredOffice": "Panday Colony, Gyalzing, Sikkim, India",
+          "llpin": "ACJ-3325",
+          "arn": "313834",
+          "complianceOfficer": "BINAY PRADHAN",
+          "email": "binay@eazysip.com",
+          "phone": "+91 75570 51930",
+          "sebiScores": "Investor complaints may also be filed on SEBI SCORES."
+        }
+      }
+    ]
+  }
+}
