@@ -1,4 +1,16 @@
 {
+  "navHome": "Home",
+  "navAbout": "About Us",
+  "navLearn": "Learn",
+  "navCalculator": "Calculator",
+  "downloadApp": "Download App",
+  "header": {
+    "navHome": "Home",
+    "navAbout": "About Us",
+    "navLearn": "Learn",
+    "navCalculator": "Calculator",
+    "downloadApp": "Download App"
+  },
   "common": {
     "downloadApp": "Download App",
     "downloadEazySip": "Download eazySIP",

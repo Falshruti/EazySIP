@@ -25,12 +25,17 @@ export default function Header({ lang, dict }: HeaderProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const isNe = lang === 'ne';
+  const hDict = dict?.header || dict || {};
+
   const navLinks = [
-    { href: '/',               label: dict.navHome },
-    { href: '/about',          label: dict.navAbout || 'About Us' },
-    { href: '/learn',          label: dict.navLearn },
-    { href: '/sip-calculator', label: dict.navCalculator },
+    { href: '/',               label: hDict.navHome || hDict.common?.home || dict?.common?.home || (isNe ? 'गृहपृष्ठ' : 'Home') },
+    { href: '/about',          label: hDict.navAbout || hDict.common?.aboutUs || hDict.common?.about || dict?.common?.aboutUs || (isNe ? 'हाम्रो बारेमा' : 'About Us') },
+    { href: '/learn',          label: hDict.navLearn || hDict.common?.blog || dict?.common?.blog || (isNe ? 'सिक्नुहोस्' : 'Learn') },
+    { href: '/sip-calculator', label: hDict.navCalculator || hDict.common?.calculator || dict?.common?.calculator || (isNe ? 'क्याल्कुलेटर' : 'Calculator') },
   ];
+
+  const downloadText = hDict.downloadApp || hDict.common?.downloadApp || dict?.common?.downloadApp || (isNe ? 'एप डाउनलोड गर्नुहोस्' : 'Download App');
 
   const getHref = (path: string) => {
     if (lang === 'ne') return path === '/' ? '/ne' : `/ne${path}`;
@@ -70,7 +75,7 @@ export default function Header({ lang, dict }: HeaderProps) {
             href="#download"
             className="bg-lime text-teal font-semibold text-xs px-4 py-1.5 rounded-full transition-transform hover:scale-105 shadow-lime"
           >
-            {dict.downloadApp}
+            {downloadText}
           </Link>
           <LanguageToggle currentLang={lang} />
         </div>
@@ -126,7 +131,7 @@ export default function Header({ lang, dict }: HeaderProps) {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block w-full text-center bg-lime text-teal font-semibold text-sm px-4 py-2.5 rounded-full mb-4"
               >
-                {dict.downloadApp}
+                {downloadText}
               </Link>
               <div className="flex justify-center">
                 <LanguageToggle currentLang={lang} />

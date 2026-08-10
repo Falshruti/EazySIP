@@ -1,4 +1,16 @@
 {
+  "navHome": "गृहपृष्ठ",
+  "navAbout": "हाम्रो बारेमा",
+  "navLearn": "सिक्नुहोस्",
+  "navCalculator": "क्याल्कुलेटर",
+  "downloadApp": "एप डाउनलोड गर्नुहोस्",
+  "header": {
+    "navHome": "गृहपृष्ठ",
+    "navAbout": "हाम्रो बारेमा",
+    "navLearn": "सिक्नुहोस्",
+    "navCalculator": "क्याल्कुलेटर",
+    "downloadApp": "एप डाउनलोड गर्नुहोस्"
+  },
   "common": {
     "downloadApp": "एप डाउनलोड गर्नुहोस्",
     "downloadEazySip": "eazySIP डाउनलोड गर्नुहोस्",
