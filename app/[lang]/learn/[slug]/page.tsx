@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Clock, ArrowLeft, BookOpen, ChevronRight, Sparkles, MessageCircle, Share2, CheckCircle2, Award } from 'lucide-react';
-import { BLOG_ARTICLES } from '@/lib/blogs';
+import { BLOG_ARTICLES, getArticleTitle, getArticleExcerpt, getArticleCategory } from '@/lib/blogs';
 import FinalCTA from '@/components/sections/FinalCTA';
 import type { Metadata } from 'next';
 
@@ -16,18 +16,26 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
-  const { slug } = await params;
+  const { lang, slug } = await params;
   const article = BLOG_ARTICLES.find((a) => a.slug === slug);
 
   if (!article) {
-    return {
-      title: 'Article Not Found - eazySIP',
-    };
+    return { title: 'Article Not Found - eazySIP' };
   }
 
+  const title = lang === 'ne' && article.ne?.title ? article.ne.title : article.title;
+  const excerpt = lang === 'ne' && article.ne?.excerpt ? article.ne.excerpt : article.excerpt;
+
   return {
-    title: `${article.title} - eazySIP Guides`,
-    description: article.excerpt,
+    title: `${title} - eazySIP Guides`,
+    description: excerpt,
+    alternates: {
+      canonical: lang === 'ne' ? `https://eazysip.com/ne/learn/${slug}` : `https://eazysip.com/learn/${slug}`,
+      languages: {
+        'en-IN': `https://eazysip.com/learn/${slug}`,
+        'ne-IN': `https://eazysip.com/ne/learn/${slug}`,
+      },
+    },
   };
 }
 
@@ -160,23 +168,51 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
     notFound();
   }
 
+  const isNe = lang === 'ne';
+  const articleTitle = getArticleTitle(article, lang);
+  const articleExcerpt = getArticleExcerpt(article, lang);
+  const articleCategory = getArticleCategory(article, lang);
+
   const getHref = (path: string) => {
     if (lang === 'ne') return path === '/' ? '/ne' : `/ne${path}`;
     return path;
+  };
+
+  const ui = {
+    backLabel: isNe ? 'सिकाइ केन्द्रमा फर्कनुहोस्' : 'Back to Learning Center',
+    learnLabel: isNe ? 'सिक्नुहोस्' : 'Learn',
+    verifiedBadge: isNe ? 'प्रमाणित सल्लाह' : 'Verified Advisory',
+    authorTeam: isNe ? 'eazySIP अनुसन्धान टोली' : 'eazySIP Research Team',
+    authorSubtitle: isNe ? 'वित्तीय योजना र साक्षरता' : 'Financial Planning & Literacy',
+    execSummary: isNe ? 'संक्षिप्त सारांश' : 'Executive Summary',
+    shareLabel: isNe ? 'यो लेख शेयर गर्नुहोस्:' : 'Share this article:',
+    whatsappShare: 'WhatsApp',
+    twitterShare: isNe ? 'शेयर' : 'Share',
+    freeGuidance: isNe ? 'निःशुल्क मार्गदर्शन' : 'Free Guidance',
+    bannerHeading: isNe ? 'यो मार्गदर्शनबारे प्रश्न छ?' : 'Have questions about this guide?',
+    bannerBody: isNe
+      ? 'हाम्रा वित्तीय सहायोगीहरू तपाईंको परिवारको वित्तीय लक्ष्यहरू सरल भाषामा योजना बनाउन मद्दत गर्न तयार छन्।'
+      : "Our financial Sahayogis are ready to help you plan your family's financial goals in simple terms.",
+    chatWhatsApp: isNe ? 'WhatsApp मा कुरा गर्नुहोस्' : 'Chat on WhatsApp',
+    moreGuides: isNe ? 'थप वित्तीय मार्गदर्शनहरू' : 'More Financial Guides',
+    recommendedGuides: isNe ? 'सिफारिस गरिएका मार्गदर्शनहरू' : 'Recommended Guides',
+    recommendedSub: isNe ? 'दीर्घकालीन सम्पत्ति निर्माणमा मद्दत गर्ने छानिएका लेखहरू।' : 'Handpicked articles to help you build long-term wealth.',
+    viewAll: isNe ? 'सबै लेखहरू हेर्नुहोस्' : 'View All Articles',
+    readArticle: isNe ? 'लेख पढ्नुहोस् →' : 'Read Article →',
   };
 
   const otherArticles = BLOG_ARTICLES.filter((a) => a.slug !== article.slug);
   const sidebarArticles = otherArticles.slice(0, 4);
   const bottomArticles = otherArticles.slice(4, 7);
 
-  const shareText = encodeURIComponent(`Check out this financial guide on eazySIP: ${article.title}`);
-  const shareUrl = encodeURIComponent(`https://eazysip.com/learn/${article.slug}`);
+  const shareText = encodeURIComponent(`${isNe ? 'eazySIP मा यो वित्तीय मार्गदर्शन हेर्नुहोस्' : 'Check out this financial guide on eazySIP'}: ${articleTitle}`);
+  const shareUrl = encodeURIComponent(`https://eazysip.com/${lang === 'ne' ? 'ne/' : ''}learn/${article.slug}`);
 
   const blogPostingJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: article.title,
-    description: article.excerpt,
+    headline: articleTitle,
+    description: articleExcerpt,
     image: `https://eazysip.com${article.img}`,
     author: {
       '@type': 'Organization',
@@ -206,13 +242,13 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
             className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#1c7e4b] hover:text-[#15633a] transition-colors"
           >
             <ArrowLeft size={16} />
-            <span>Back to Learning Center</span>
+            <span>{ui.backLabel}</span>
           </Link>
           
           <div className="flex items-center gap-2 text-xs text-gray-400 font-medium">
-            <span>Learn</span>
+            <span>{ui.learnLabel}</span>
             <span>/</span>
-            <span>{article.category}</span>
+            <span>{articleCategory}</span>
           </div>
         </div>
 
@@ -225,17 +261,17 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
             {/* Category & Verified Badge */}
             <div className="flex items-center justify-between gap-4 mb-4">
               <span className="inline-block text-xs font-bold text-[#1c7e4b] bg-[#1c7e4b]/10 px-3.5 py-1 rounded-full uppercase tracking-wider">
-                {article.category}
+                {articleCategory}
               </span>
               <span className="inline-flex items-center gap-1 text-xs text-gray-500 font-medium bg-stone-100 px-3 py-1 rounded-full">
                 <Award size={13} className="text-[#1c7e4b]" />
-                <span>Verified Advisory</span>
+                <span>{ui.verifiedBadge}</span>
               </span>
             </div>
 
             {/* Article Title */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight font-heading leading-tight mb-6">
-              {article.title}
+              {articleTitle}
             </h1>
 
             {/* Author & Meta Info Bar */}
@@ -245,8 +281,8 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
                   ES
                 </div>
                 <div>
-                  <span className="font-bold text-gray-900 block font-heading">eazySIP Research Team</span>
-                  <span className="text-[11px] text-gray-400">Financial Planning & Literacy</span>
+                  <span className="font-bold text-gray-900 block font-heading">{ui.authorTeam}</span>
+                  <span className="text-[11px] text-gray-400">{ui.authorSubtitle}</span>
                 </div>
               </div>
 
@@ -259,17 +295,17 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
 
             {/* Hero Image */}
             <div className="w-full h-64 sm:h-[420px] rounded-3xl overflow-hidden mb-8 shadow-md border border-gray-100">
-              <img src={article.img} alt={article.title} className="w-full h-full object-cover" />
+              <img src={article.img} alt={articleTitle} loading="lazy" decoding="async" className="w-full h-full object-cover" />
             </div>
 
             {/* Executive Summary Callout Box */}
             <div className="bg-gradient-to-br from-[#1c7e4b]/10 via-emerald-50/50 to-stone-50 border-l-4 border-[#1c7e4b] p-6 sm:p-8 rounded-r-3xl mb-10 shadow-xs">
               <div className="flex items-center gap-2 text-xs font-bold text-[#1c7e4b] uppercase tracking-wider mb-2">
                 <Sparkles size={15} />
-                <span>Executive Summary</span>
+                <span>{ui.execSummary}</span>
               </div>
               <p className="text-base sm:text-lg text-gray-700 font-normal leading-relaxed">
-                {article.excerpt}
+                {articleExcerpt}
               </p>
             </div>
 
@@ -280,7 +316,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
 
             {/* Share & Social Action Footer */}
             <div className="mt-12 pt-6 border-t border-gray-100 flex flex-wrap items-center justify-between gap-4">
-              <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">Share this article:</span>
+              <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">{ui.shareLabel}</span>
               <div className="flex items-center gap-2">
                 <a
                   href={`https://wa.me/?text=${shareText}%20${shareUrl}`}
@@ -289,7 +325,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
                   className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#25D366]/15 hover:bg-[#25D366]/25 text-[#128C7E] text-xs font-bold transition-all"
                 >
                   <MessageCircle size={14} />
-                  <span>WhatsApp</span>
+                  <span>{ui.whatsappShare}</span>
                 </a>
                 <a
                   href={`https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`}
@@ -298,7 +334,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
                   className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800 text-xs font-bold transition-all"
                 >
                   <Share2 size={14} />
-                  <span>Share</span>
+                  <span>{ui.twitterShare}</span>
                 </a>
               </div>
             </div>
@@ -308,10 +344,10 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
               <div className="space-y-1.5 text-center sm:text-left">
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#208b53]/40 text-[#86efac] text-[11px] font-bold mb-1 border border-[#208b53]/50">
                   <Sparkles size={12} />
-                  <span>Free Guidance</span>
+                  <span>{ui.freeGuidance}</span>
                 </div>
-                <h3 className="text-lg sm:text-xl font-extrabold text-white font-heading">Have questions about this guide?</h3>
-                <p className="text-xs sm:text-sm text-emerald-100/90 leading-relaxed font-normal">Our financial Sahayogis are ready to help you plan your family&apos;s financial goals in simple terms.</p>
+                <h3 className="text-lg sm:text-xl font-extrabold text-white font-heading">{ui.bannerHeading}</h3>
+                <p className="text-xs sm:text-sm text-emerald-100/90 leading-relaxed font-normal">{ui.bannerBody}</p>
               </div>
               <a
                 href="https://wa.me/919134196221"
@@ -320,7 +356,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[#208b53] hover:bg-[#166534] text-white text-xs sm:text-sm font-bold transition-all shadow-lg shrink-0"
               >
                 <MessageCircle size={17} />
-                <span>Chat on WhatsApp</span>
+                <span>{ui.chatWhatsApp}</span>
               </a>
             </div>
 
@@ -333,7 +369,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
               {/* Popular Related Guides Sidebar */}
               <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm">
                 <h3 className="text-base font-bold text-gray-900 mb-5 font-heading pb-3 border-b border-gray-100 flex items-center justify-between">
-                  <span>More Financial Guides</span>
+                  <span>{ui.moreGuides}</span>
                   <BookOpen size={16} className="text-[#1c7e4b]" />
                 </h3>
                 <div className="space-y-4">
@@ -345,15 +381,17 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
                     >
                       <img
                         src={item.img}
-                        alt={item.title}
+                        alt={getArticleTitle(item, lang)}
+                        loading="lazy"
+                        decoding="async"
                         className="w-16 h-16 rounded-xl object-cover shrink-0 group-hover:scale-105 transition-transform"
                       />
                       <div className="flex-1 min-w-0">
                         <span className="text-[10px] font-bold text-[#1c7e4b] block uppercase">
-                          {item.category}
+                          {getArticleCategory(item, lang)}
                         </span>
                         <h4 className="text-xs font-bold text-gray-900 group-hover:text-[#1c7e4b] transition-colors line-clamp-2 leading-snug mt-0.5 font-heading">
-                          {item.title}
+                          {getArticleTitle(item, lang)}
                         </h4>
                         <span className="text-[10px] text-gray-400 mt-1 block">
                           {item.readTime}
@@ -374,14 +412,14 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
           <div className="mt-20 border-t border-gray-200/80 pt-14">
             <div className="flex items-center justify-between mb-8">
               <div>
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 font-heading">Recommended Guides</h3>
-                <p className="text-xs sm:text-sm text-gray-500 mt-1">Handpicked articles to help you build long-term wealth.</p>
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 font-heading">{ui.recommendedGuides}</h3>
+                <p className="text-xs sm:text-sm text-gray-500 mt-1">{ui.recommendedSub}</p>
               </div>
               <Link
                 href={getHref('/learn')}
                 className="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-[#1c7e4b] hover:underline"
               >
-                <span>View All Articles</span>
+                <span>{ui.viewAll}</span>
                 <ChevronRight size={14} />
               </Link>
             </div>
@@ -394,23 +432,23 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
                   className="group bg-white rounded-3xl border border-gray-200/80 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
                 >
                   <div className="h-44 w-full overflow-hidden relative">
-                    <img src={rel.img} alt={rel.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={rel.img} alt={getArticleTitle(rel, lang)} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                     <span className="absolute top-3 left-3 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
-                      {rel.category}
+                      {getArticleCategory(rel, lang)}
                     </span>
                   </div>
                   <div className="p-6 flex-1 flex flex-col justify-between">
                     <div>
                       <h4 className="text-base font-bold text-gray-900 group-hover:text-[#1c7e4b] transition-colors line-clamp-2 leading-snug mb-2 font-heading">
-                        {rel.title}
+                        {getArticleTitle(rel, lang)}
                       </h4>
                       <p className="text-xs text-gray-600 line-clamp-2 leading-relaxed mb-4">
-                        {rel.excerpt}
+                        {getArticleExcerpt(rel, lang)}
                       </p>
                     </div>
                     <div className="flex items-center justify-between border-t border-gray-100 pt-3.5 text-xs text-gray-400 font-medium">
                       <span>{rel.readTime}</span>
-                      <span className="text-[#1c7e4b] font-bold group-hover:underline">Read Article →</span>
+                      <span className="text-[#1c7e4b] font-bold group-hover:underline">{ui.readArticle}</span>
                     </div>
                   </div>
                 </Link>

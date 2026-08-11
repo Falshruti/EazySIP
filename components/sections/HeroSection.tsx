@@ -94,20 +94,20 @@ export default function HeroSection({ dict, lang = 'en' }: HeroSectionProps) {
   return (
     <>
       {/* Full screen hero section (100vw x 100vh) starting at top-0 */}
-      <section className="relative w-full h-screen bg-black overflow-hidden pt-0">
+      <section className="relative w-full bg-black overflow-hidden pt-0">
         <h1 className="sr-only">
           {lang === 'ne' ? 'मात्र ₹100 बाट लगानी सुरु गर्नुहोस् | EazySIP' : 'Start Investing with Just ₹100 | EazySIP Sikkim'}
         </h1>
         {/* Perfectly centered 16:9 proportional video cover container */}
         <div 
-          className="relative w-full h-full overflow-hidden cursor-pointer group bg-black"
+          className="relative w-full aspect-video md:h-screen overflow-hidden cursor-pointer group bg-black"
           onClick={togglePlayPause}
         >
           <iframe
             id="hero-yt-player"
             src="https://www.youtube-nocookie.com/embed/7_W07StrbBU?enablejsapi=1&autoplay=1&mute=1&loop=1&playlist=7_W07StrbBU&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&disablekb=1&playsinline=1&cc_load_policy=0&cc_lang_pref=off&hl=en"
             title="EazySIP Hero Video"
-            className="absolute top-1/2 left-1/2 w-[177.78vh] min-w-full h-[56.25vw] min-h-full -translate-x-1/2 -translate-y-1/2 object-cover pointer-events-none"
+            className="w-full h-full md:absolute md:top-1/2 md:left-1/2 md:w-[177.78vh] md:min-w-full md:h-[56.25vw] md:min-h-full md:-translate-x-1/2 md:-translate-y-1/2 md:object-cover pointer-events-none"
             allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
             style={{ border: 'none' }}
           />

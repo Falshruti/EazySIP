@@ -7,10 +7,23 @@ import { StaggeredContainer } from '@/components/animations/StaggeredContainer';
 import { TrendingUp, ShieldCheck, Repeat, Coins, ChevronDown } from 'lucide-react';
 import type { Metadata } from 'next';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ lang: 'en' | 'ne' }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const isNe = lang === 'ne';
   return {
-    title: 'SIP & Goal Calculator | Estimate Your Savings & Goals | EazySIP',
-    description: 'Calculate your SIP returns and estimate monthly savings required for your specific target financial goals with EazySIP.',
+    title: isNe
+      ? 'SIP क्याल्कुलेटर | EazySIP — मासिक बचत अनुमान गर्नुहोस्'
+      : 'SIP & Goal Calculator | Estimate Your Savings & Goals | EazySIP',
+    description: isNe
+      ? 'EazySIP को SIP क्याल्कुलेटरले तपाईंको मासिक लगानी र भविष्यको लक्ष्य रकम अनुमान गर्न मद्दत गर्छ।'
+      : 'Calculate your SIP returns and estimate monthly savings required for your specific target financial goals with EazySIP.',
+    alternates: {
+      canonical: isNe ? 'https://eazysip.com/ne/sip-calculator' : 'https://eazysip.com/sip-calculator',
+      languages: {
+        'en-IN': 'https://eazysip.com/sip-calculator',
+        'ne-IN': 'https://eazysip.com/ne/sip-calculator',
+      },
+    },
   };
 }
 
@@ -90,12 +103,12 @@ export default async function SipCalculatorPage({ params }: { params: Promise<{ 
           </SlideUp>
           <StaggeredContainer className="space-y-4">
             {faqs.map((faq, i) => (
-              <details key={i} className="group border border-gray-100 rounded-2xl overflow-hidden shadow-sm bg-white">
+              <details key={i} aria-label={faq.q} className="group border border-gray-100 rounded-2xl overflow-hidden shadow-sm bg-white">
                 <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none hover:bg-gray-50 transition-colors">
                   <span className="text-base font-bold text-dark pr-4">{faq.q}</span>
-                  <ChevronDown className="w-5 h-5 text-gray-400 shrink-0 transition-transform group-open:rotate-180" />
+                  <ChevronDown className="w-5 h-5 text-gray-400 shrink-0 transition-transform group-open:rotate-180" aria-hidden="true" />
                 </summary>
-                <div className="px-6 pb-5">
+                <div className="px-6 pb-5" role="region">
                   <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
                 </div>
               </details>

@@ -31,16 +31,9 @@ export default function InvestTodaySection({ lang = 'en' }: InvestTodaySectionPr
   return (
     <section style={{ backgroundColor: '#f8f8f8', padding: '56px 0', overflow: 'hidden', borderRadius: '20px' }}>
       <div style={{ maxWidth: '1180px', margin: '0 auto', padding: '0 32px' }}>
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '40px',
-            alignItems: 'center',
-          }}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* ── Left Text ── */}
-          <div style={{ maxWidth: '480px' }}>
+          <div className="order-2 md:order-1 text-center md:text-left mx-auto md:mx-0" style={{ maxWidth: '480px' }}>
             <h2
               style={{
                 fontSize: 'clamp(1.7rem, 2.8vw, 2.3rem)',
@@ -97,7 +90,7 @@ export default function InvestTodaySection({ lang = 'en' }: InvestTodaySectionPr
             </p>
 
             {/* Outline buttons */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '14px' }}>
+            <div className="flex flex-wrap justify-center md:justify-start gap-3.5">
               <a
                 href="#download"
                 aria-label="Download on the App Store"
@@ -152,6 +145,7 @@ export default function InvestTodaySection({ lang = 'en' }: InvestTodaySectionPr
 
           {/* ── Right Jar Image ── */}
           <div
+            className="order-1 md:order-2"
             style={{
               position: 'relative',
               display: 'flex',

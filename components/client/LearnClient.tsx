@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Clock, Sparkles, ChevronRight } from 'lucide-react';
 import FinalCTA from '@/components/sections/FinalCTA';
-import { BLOG_ARTICLES } from '@/lib/blogs';
+import { BLOG_ARTICLES, getArticleTitle, getArticleExcerpt, getArticleCategory } from '@/lib/blogs';
 
 interface LearnClientProps {
   dict?: any;
@@ -92,7 +92,9 @@ export default function LearnClient({ dict, lang = 'en' }: LearnClientProps) {
           <div className="w-full md:w-1/2 h-56 sm:h-64 rounded-2xl overflow-hidden shadow-md shrink-0 relative">
             <img
               src={featured.img}
-              alt={featured.title}
+              alt={getArticleTitle(featured, lang)}
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
           </div>
@@ -102,11 +104,11 @@ export default function LearnClient({ dict, lang = 'en' }: LearnClientProps) {
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3 leading-snug font-heading">
               <Link href={getHref(`/learn/${featured.slug}`)} className="hover:text-[#1c7e4b] transition-colors">
-                {featured.title}
+                {getArticleTitle(featured, lang)}
               </Link>
             </h2>
             <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed">
-              {featured.excerpt}
+              {getArticleExcerpt(featured, lang)}
             </p>
             <div className="flex flex-wrap items-center justify-between gap-4">
               <span className="flex items-center gap-1.5 text-xs text-gray-500 font-medium">
@@ -156,21 +158,23 @@ export default function LearnClient({ dict, lang = 'en' }: LearnClientProps) {
                 <div className="h-44 w-full overflow-hidden relative">
                   <img
                     src={article.img}
-                    alt={article.title}
+                    alt={getArticleTitle(article, lang)}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <span className="absolute top-3 left-3 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
-                    {article.category}
+                    {getArticleCategory(article, lang)}
                   </span>
                 </div>
 
                 <div className="p-6 flex-1 flex flex-col justify-between">
                   <div>
                     <h4 className="text-base font-bold text-gray-900 group-hover:text-[#1c7e4b] transition-colors leading-snug line-clamp-2 mb-2 font-heading">
-                      {article.title}
+                      {getArticleTitle(article, lang)}
                     </h4>
                     <p className="text-xs text-gray-600 line-clamp-2 leading-relaxed mb-4">
-                      {article.excerpt}
+                      {getArticleExcerpt(article, lang)}
                     </p>
                   </div>
                   <div className="flex items-center justify-between border-t border-gray-100 pt-3.5 text-xs text-gray-400 font-medium">

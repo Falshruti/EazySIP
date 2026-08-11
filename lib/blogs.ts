@@ -8,6 +8,27 @@ export interface BlogArticle {
   readTime: string;
   excerpt: string;
   content: string;
+  // Nepali translations (optional)
+  ne?: {
+    title?: string;
+    excerpt?: string;
+    category?: string;
+  };
+}
+
+/** Returns the article's title in the given language */
+export function getArticleTitle(article: BlogArticle, lang: string): string {
+  return lang === 'ne' && article.ne?.title ? article.ne.title : article.title;
+}
+
+/** Returns the article's excerpt in the given language */
+export function getArticleExcerpt(article: BlogArticle, lang: string): string {
+  return lang === 'ne' && article.ne?.excerpt ? article.ne.excerpt : article.excerpt;
+}
+
+/** Returns the article's category label in the given language */
+export function getArticleCategory(article: BlogArticle, lang: string): string {
+  return lang === 'ne' && article.ne?.category ? article.ne.category : article.category;
 }
 
 export const BLOG_ARTICLES: BlogArticle[] = [
@@ -20,6 +41,11 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     date: 'August 1, 2026',
     readTime: '5 min read',
     excerpt: 'Mr. Lepcha worked in Gangtok for thirty-five years, disciplined and proud of his stack of FD certificates. But with rising healthcare costs and longer retirements, is safety alone enough?',
+    ne: {
+      title: 'बचत बानी: के मात्रै FD राख्नु पुग्छ?',
+      excerpt: 'श्री लेप्छा गांगटकमा पैसत्तिस वर्ष काम गर्नुभयो, आफ्ना FD प्रमाणपत्रहरूमा गर्वित र अनुशासित। तर बढ्दो स्वास्थ्य खर्च र लंबो अवकाशकालसँगै, के सुरक्षा मात्रै पुग्छ?',
+      category: 'स्मार्ट बचत'
+    },
     content: `Mr. Lepcha worked in Gangtok for thirty-five years. Every year, when he received his bonus or managed to save a little extra, he walked to the bank and opened a new fixed deposit. He is deeply proud of his neat stack of FD certificates, each one representing years of careful discipline and sacrifice.
 
 His son, Norden sat down to help his father plan for the coming years, he did the math quietly. The FDs would provide a steady, safe income. Between his mother's growing medical needs, the rising cost of everyday essentials, and the simple fact that his parents might live another twenty or twenty-five years, the numbers looked tighter than his father had ever imagined.
@@ -46,6 +72,11 @@ Mr. Lepcha's fixed deposits represent something beautiful, decades of discipline
     date: 'August 2, 2026',
     readTime: '4 min read',
     excerpt: 'Like water dripping from an old tin roof wearing down solid rock, inflation quietly chips away at the buying power of your hard-earned savings.',
+    ne: {
+      title: 'महँगाई: सिस्तै सिस्तै…',
+      excerpt: 'पुरानो तक्ता छानसंग टपक्ने पानीजस्तै, महँगाईले तपाईंको कडा मेहनतका कमाइको क्रय शक्तिलाई चुपचाप घटाउँदै जान्छ।',
+      category: 'वित्तीय योजना'
+    },
     content: `I remember watching the water drip after the rains steadily from a old tin roof. At first, it seems harmless, just a few drops falling onto the same spot every day. But over the years, those tiny drops would slowly wear away even a solid rock beneath them. No single drop causes damage, it is the quiet, constant dripping that does the work. You don't notice it in a day, a month, or even a year. But little by little, it chips away at the value of your savings. This slow loss of value is called inflation. It simply means that, over time, the price of things—rice, vegetables, school fees, bus fares, medicines—tend to rise. A hundred rupees today will not buy what a hundred rupees bought ten years ago, and it certainly will not buy much ten years later.
 
 Aaji used to keep her savings the same way for the last fifty years, safely in a tin box in the teak cupboard. It had grown slowly over decades; with savings she set aside from selling sabji at Lal Bazaar. When she passed away last year, the family found nearly two lakh rupees in that box. It was her legacy.
@@ -65,6 +96,11 @@ The mountains have taught us to watch for small holes in the roof before they be
     date: 'August 3, 2026',
     readTime: '5 min read',
     excerpt: "Today's thief does not need to break a lock. He only needs a phone call, a fake message, or an OTP. Learn how to protect your family's savings.",
+    ne: {
+      title: 'ठगि चेतावनी: ओये चोर!',
+      excerpt: 'आजकलको चोरलाई ताला भांच्न पर्दैन। उसलाई मात्र एउटा फोन कल, नकली सन्देश, वा OTP चाहिए। आफ्नो परिवारको बचत कसरी सुरक्षित गर्ने सिक्नुहोस्।',
+      category: 'वित्तीय सुरक्षा'
+    },
     content: `Mrs. Subba, a retired schoolteacher in Gyalshing, has always locked her doors carefully. She checks the gas before sleeping. Last winter, her phone rang. A polite voice, speaking fluent Hindi, told her that her bank account would be blocked in twenty-four hours unless she verified her details immediately. He knew her bank's name. He sounded official, even urgent, the way a real bank officer might sound. Frightened, she read out the OTP that arrived on her phone. Within minutes, forty thousand rupees, a good part of her monthly pension savings, was gone.
 
 Mrs. Subba did nothing wrong by the standards of the world she grew up in. She simply did not know that this world had changed, and that today's thief does not need to break a lock. He only needs a phone call, a link, or a fake message that looks exactly like it came from her own bank. More people now do their banking on phones but it has also opened a new door for a different kind of crime.
@@ -91,6 +127,11 @@ Perhaps, it is time we teach both our children and our parents, to guard informa
     date: 'August 4, 2026',
     readTime: '5 min read',
     excerpt: 'Community support is beautiful, but medical emergencies can wipe out family savings. Discover how health insurance acts as a vital safety net.',
+    ne: {
+      title: 'किन हामी Facebookमा अस्पतालको बिल तिर्न मद्दत माग्दैछौं?',
+      excerpt: 'समुदायको समर्थन सुन्दर छ, तर चिकित्सा आपतकालले परिवारको बचत सक्किपार्छ। स्वास्थ्य बिमा कसरी जरुरी सुरक्षा कवचका रूपमा काम गर्छ पत्ता लगाउनुहोस्।',
+      category: 'वित्तीय सुरक्षा'
+    },
     content: `Scroll through any local community Facebook page for long enough, and you will find one. A photo of a tired-looking man in a hospital bed. A short message written by his son or daughter. An amount needed, written in bold. A UPI number below it. "Please help our father. He is a taxi driver from Soreng. He has been the sole earner for our family."
 
 Amit saw one such post last month, he recognized the face immediately. He sent two hundred rupees, shared the post, and then sat quietly for a while, thinking about his own health, and his own family, and how easily this could have been him.
@@ -117,6 +158,11 @@ There is real kindness in a community coming together to fund a stranger's hospi
     date: 'August 4, 2026',
     readTime: '4 min read',
     excerpt: 'Community collections used to absorb medical shocks, but as costs rise and families shrink, building your own emergency fund is essential.',
+    ne: {
+      title: 'आपतकालीन कोष: हाम्रो समाज त …',
+      excerpt: 'समुदायिक चन्दाले चिकित्सा संकट जम्मा गर्थ्यो, तर खर्च बढ्दाउँदै र परिवार सानो हुँदै जाँदा, आफ्नै आपतकालीन कोष बनाउनु अत्यावश्यक छ।',
+      category: 'वित्तीय योजना'
+    },
     content: `I still remember the time when Anil’s father fell from the roof while fixing a leaking roof. Within a few hours, the samaj was there. A cousin drove him to Siliguri refusing any payment. The contributions kept coming in and hospital bills was taken care of. Nobody sent a bill, no one kept an account. That was twenty years ago.
 
 Last year, when his own son needed a minor surgery in Gangtok, he did not think to call the samaj first. He called his bank for a loan. The neighbours came to visit, brought fruits, said kind words. But nobody organised a collection. Nobody expected to. Somewhere between his father's accident and his son's surgery, something had quietly changed.
@@ -145,6 +191,11 @@ The samaj gave our parents something money alone cannot buy—the certainty that
     date: 'August 5, 2026',
     readTime: '5 min read',
     excerpt: 'Newer careers in digital marketing, tourism, and business offer high income but no pension. Learn how to build your own safety net.',
+    ne: {
+      title: 'सरकारी सपनाको जागिर…',
+      excerpt: 'डिजिटल मार्केटिङ, पर्यटन, र व्यापारमा नयाँ क्यारियरहरूले उच्च आम्दानी दिन्छन् तर पेन्सन छैन। आफ्नै सुरक्षा कवच कसरी बनाउने सिक्नुहोस्।',
+      category: 'वित्तीय योजना'
+    },
     content: `There is a house everyone in the neighborhood still points to with quiet respect. It belongs to Mr. Subba, who spent thirty-two years working in a government department before retiring. His children grew up hearing one dream repeated at every family gathering: get a government job, and life is settled. Fixed salary, pension after retirement, respect in the samaj, a loan easily approved by any bank. For Mr. Subba's generation, this was not just a career choice. It was the whole plan.
 
 His daughter, Tara, studied hard, gave several government exams, and did not clear them. Instead, she now works with a digital marketing firm in Gangtok, earning more than her father did—but she often feels the quiet weight of her father's quiet disappointment.
@@ -175,6 +226,11 @@ Mr. Subba's generation built security through one door that was hard to open but
     date: 'August 5, 2026',
     readTime: '5 min read',
     excerpt: 'A wedding lasts a day, but a loan can last years. Discover how early investment planning saves families from high-pressure debt.',
+    ne: {
+      title: 'विवाह कोष: एउटा ठूलो भारतीय विवाह…',
+      excerpt: 'विवाह एक दिन टिक्छ, तर कर्जा वर्षौंसम्म टिक्न सक्छ। शुरुवाती लगानी योजनाले परिवारलाई उच्च दाबको कर्जाबाट कसरी जोगाउँछ निश्कर्ष गर्नुहोस्।',
+      category: 'स्मार्ट बचत'
+    },
     content: `Santosh’s sister got married in Gangtok two years ago: a grand venue, a live band, a guest list that seemed to include half the town, three changes of outfits for the bride, and a return gift for every guest who attended. It was, by every measure, a beautiful wedding. People still mention it fondly at gatherings. What most people don’t know is that Santosh’s father had taken a loan to make it happen, one he was still repaying two years later, quietly, without complaint, the way many parents do.
 
 Earlier, weddings were often simple by comparison: a small ceremony, close family, food cooked at home by relatives and neighbours who pitched in together. This was not because they valued the occasion less. It was often simply what circumstances allowed, and simplicity carried its own kind of dignity.
@@ -201,6 +257,11 @@ A wedding lasts a day, a loan can last years, quietly shadowing a family's finan
     date: 'August 5, 2026',
     readTime: '4 min read',
     excerpt: 'Tourism brings opportunity to local towns like Lachen, but rising local prices squeeze fixed-income families. Here is how to prepare.',
+    ne: {
+      title: 'स्वर्गको मूल्य',
+      excerpt: 'पर्यटनले लाचेन जस्ता स्थानीय सहरहरूमा अवसर ल्याउँछ, तर बढ्दो स्थानीय मूल्यहरूले निश्चित आम्दानी भएका परिवारहरूलाई चेप्छ। तयारी कसरी गर्ने निश्कर्ष गर्नुहोस्।',
+      category: 'स्मार्ट बचत'
+    },
     content: `Ten years ago, Lachen was a quiet village most outsiders had never heard of. Today, during peak season, its narrow roads see a steady stream of tourist vehicles, homestays are booked months in advance, and a cup of tea that once cost a few rupees now costs considerably more. For Tshering, who has run a small general store there since his father's time, this change has been both a blessing and a burden.
 
 His income has grown, but so has the cost of everything he himself needs to buy: rent for his small shop space has risen sharply, transportation of goods up the mountain costs more each year, and even local vegetables, once cheap and plentiful, now compete with tourist demand and command higher prices.
@@ -227,6 +288,11 @@ The mist over Lachen remains genuinely priceless, but the towns are changing in 
     date: 'August 6, 2026',
     readTime: '4 min read',
     excerpt: "We invest heavily in our children's technical skills, but managing money is rarely taught. Pass down lifelong financial habits early.",
+    ne: {
+      title: 'कोडिङ र प्रविधिको सबै कुरा…',
+      excerpt: 'हामी आफ्ना बच्चाहरूको प्राविधिक सिपारतीमा ठूलो लगानी गर्छौं, तर पैसा व्यवस्थापन विरलै सिकाइन्छ। जीवनभरिका वित्तीय बानीहरू छिटो पास गर्नुहोस्।',
+      category: 'वित्तीय साक्षरता'
+    },
     content: `Twelve-year-old Tenzing can build a simple website and explain what an algorithm is. His parents enrolled him in a weekend coding class last year, proud that their son was learning skills that would matter for his future. He is genuinely talented, and his teachers say he has a bright future ahead in technology. But when his aunt gave him five thousand rupees during Losar, Tenzing spent it all within two days on games and snacks, without a second thought. Nobody had ever explained to him what saving meant, or why it mattered. We invest in their academic and technical skills, but money itself—how to save it, value it, protect it, and plan with it—is rarely taught directly, at home or in school.
 
 Today, digital payments mean money moves invisibly, through phones, without children seeing cash change hands the way earlier generations did. Nuclear families mean fewer relatives around to model different money habits. And busy schedules, packed with school and tuition and screen time, leave little room for the slower, quieter lessons that used to happen naturally around the kitchen table.
@@ -253,6 +319,11 @@ We are raising a generation more technically capable than any before it, ready t
     date: 'August 6, 2026',
     readTime: '5 min read',
     excerpt: 'Sending children to Metro cities for higher education comes with significant costs. Planning early avoids last-minute borrowing.',
+    ne: {
+      title: 'विदाइ र खूब पढ्नु है…',
+      excerpt: 'मेट्रो सहरहरूमा उच्च शिक्षाका लागि बच्चाहरू पठाउनुमा ठूलो खर्च लाग्छ। चाँडो योजनाले अन्तिम समयको कर्जाबाट जोगाउनु बचाउँछ।',
+      category: 'शिक्षा योजना'
+    },
     content: `When Diki left for Bengaluru three years ago to study nursing, her parents stood at the Bagdogra airport gate for a long time after her flight had already boarded, unable to leave, as if standing there a little longer would somehow keep her closer. Her father, a retired forest department employee, had spent almost every rupee of his savings on her admission fees, hostel deposit, and the first year's expenses. He never told Diki this. He simply said, "Padhai ma dhyan deu, baaki hami herchau" — Focus on your studies, we'll manage the rest.
 
 What Diki did not fully understand at the time was how much "managing the rest" actually cost her parents. Her father took on a small loan in the second year, something he only mentioned to Diki much later, long after it had already been repaid.
@@ -282,6 +353,11 @@ Every parent who has stood at that airport gate, watching a child disappear into
     date: 'August 6, 2026',
     readTime: '5 min read',
     excerpt: 'Everyday money wisdom from Dentam farmers to Soreng homestay owners—how Sikkim families build quiet financial strength.',
+    ne: {
+      title: 'सिक्किमका कथाहरू',
+      excerpt: 'डेन्टमका किसानहरूदेखि सोरेङका होमस्टे सञ्चालकहरूसम्मको दैनिक वित्तीय ज्ञान—सिक्किम परिवारहरूले कसरी शान्त वित्तीय शक्ति बनाउँछन्।',
+      category: 'वित्तीय लचिलापन'
+    },
     content: `Every town seems to carry its own quiet story, if you know how to listen hard enough.
 
 In Dentam, there is a cardamom farmer named Ram Bahadur who remembers the year a fungal disease wiped out most of his crop. His family had no savings large enough to absorb that year's loss, and they survived only because a neighbour lent them money until the next season. Ram still helps that same neighbour's grandchildren today, because he has never forgotten what that kindness meant during the hardest year of his life.
@@ -309,6 +385,11 @@ The hills are full of quiet, unassuming financial wisdom, carried not in textboo
     date: 'August 6, 2026',
     readTime: '4 min read',
     excerpt: 'Timeless money discipline passed down by our grandparents: repair before replacing, save before spending, and respect every rupee.',
+    ne: {
+      title: 'भुल्न नपाओस्…',
+      excerpt: 'हाम्रा हजुरबानीले सिकाउनुभएको चिरन्तन वित्तीय अनुशासन: बदल्नुभन्दा मरम्त गर्नुहोस्, खर्च गर्नुभन्दा बचत गर्नुहोस्, र हरेक रुपैयाँलाई सम्मान गर्नुहोस्।',
+      category: 'स्मार्ट बचत'
+    },
     content: `Aji lives in her old wooden house on the outskirts of Kalimpong. She has never held a bank passbook in her name, and cannot read numbers beyond simple counting. Yet her grandson, now a bank manager in Siliguri, says he learned more about money from her than from any of his professional training.
 
 "She never wasted a grain of rice," he says "because she had lived through times when every grain mattered, and that respect for resources never left her, even decades later." Aji keeps a small tin of coins under her prayer altar, adding to it whenever she can, though she could not tell you the exact amount inside. "It is not about the amount," she told her grandson once. "It is about the habit of never forgetting to save." He admits that despite studying complicated financial concepts, he still struggles with simple discipline his grandmother mastered without ever needing to name it.
@@ -335,6 +416,11 @@ Aji's tin of coins under the prayer altar will never make her wealthy in a moder
     date: 'August 6, 2026',
     readTime: '5 min read',
     excerpt: 'A heartfelt letter from a father on saving early, building emergency buffers, and using money as a tool to protect the people you love.',
+    ne: {
+      title: 'मेरो छोरालाई',
+      excerpt: 'छिटो बचत, आपतकालीन बफर बनाउने, र आफन्ते माया गर्ने मानिसहरूलाई जोगाउनको साधनको रूपमा पैसा प्रयोग गर्नेबारे बाबाको हृदयस्पर्शी चिठ्ठो।',
+      category: 'वित्तीय साक्षरता'
+    },
     content: `You are still young and this letter might feel unnecessary to you today, but I am writing it anyway, because there are some things I want you to hear from me directly, before life teaches them to you in harder ways.
 
 I want you to know that our family has never had great wealth, but what we have is discipline, and the belief that a good future lies ahead.
@@ -370,6 +456,11 @@ Bua`
     date: 'August 6, 2026',
     readTime: '6 min read',
     excerpt: 'Why picking the highest-return fund matters less than discipline, compounding time, and stepping up your SIPs year after year.',
+    ne: {
+      title: 'कुनै गोप्य नुसखा छैन',
+      excerpt: 'किन सबैभन्दा उच्च प्रतिफल भएको फन्ड छान्नुभन्दा अनुशासन, चक्रवृद्धि समय, र हरवर्ष SIP बढाउनुले बढी फरक पार्छ।',
+      category: 'SIP को आधारभूत'
+    },
     content: `Every week, I sit down with people from various parts of Sikkim—government employees, teachers, taxi operators waiting at the stand, shopkeepers at Lal Bazar, or maybe a pensioner at MG Marg enjoying the winter sun. Almost everyone asks me the same question: “Sir, which mutual fund will make me rich?”.
 
 My answer usually surprises them because the real challenge is not picking the “right” fund—it is building the right money habits and sticking to them.
