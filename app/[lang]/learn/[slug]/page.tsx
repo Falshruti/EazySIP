@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Clock, ArrowLeft, BookOpen, ChevronRight, Sparkles, MessageCircle, Share2, CheckCircle2, Award } from 'lucide-react';
-import { BLOG_ARTICLES, getArticleTitle, getArticleExcerpt, getArticleCategory } from '@/lib/blogs';
+import { BLOG_ARTICLES, getArticleTitle, getArticleExcerpt, getArticleCategory, getArticleContent } from '@/lib/blogs';
 import FinalCTA from '@/components/sections/FinalCTA';
 import type { Metadata } from 'next';
 
@@ -172,6 +172,9 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
   const articleTitle = getArticleTitle(article, lang);
   const articleExcerpt = getArticleExcerpt(article, lang);
   const articleCategory = getArticleCategory(article, lang);
+  const articleContent = getArticleContent(article, lang);
+  const formatReadTime = (rt: string) => isNe ? rt.replace(/(\d+)\s*min read/, '$1 मिनेट पढाइ') : rt;
+  const displayReadTime = formatReadTime(article.readTime);
 
   const getHref = (path: string) => {
     if (lang === 'ne') return path === '/' ? '/ne' : `/ne${path}`;
@@ -288,7 +291,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
 
               <div className="flex items-center gap-3">
                 <span className="flex items-center gap-1.5 font-medium text-gray-500 bg-stone-50 px-3.5 py-1.5 rounded-full border border-stone-200/60">
-                  <Clock size={14} className="text-[#1c7e4b]" /> {article.date} · {article.readTime}
+                  <Clock size={14} className="text-[#1c7e4b]" /> {article.date} · {displayReadTime}
                 </span>
               </div>
             </div>
@@ -311,7 +314,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
 
             {/* Rich Content Renderer */}
             <div className="space-y-6">
-              {renderFormattedContent(article.content)}
+              {renderFormattedContent(articleContent)}
             </div>
 
             {/* Share & Social Action Footer */}
@@ -394,7 +397,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
                           {getArticleTitle(item, lang)}
                         </h4>
                         <span className="text-[10px] text-gray-400 mt-1 block">
-                          {item.readTime}
+                          {formatReadTime(item.readTime)}
                         </span>
                       </div>
                     </Link>
@@ -447,7 +450,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
                       </p>
                     </div>
                     <div className="flex items-center justify-between border-t border-gray-100 pt-3.5 text-xs text-gray-400 font-medium">
-                      <span>{rel.readTime}</span>
+                      <span>{formatReadTime(rel.readTime)}</span>
                       <span className="text-[#1c7e4b] font-bold group-hover:underline">{ui.readArticle}</span>
                     </div>
                   </div>
